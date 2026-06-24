@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <rect width="200" height="80" fill="#FCFBF7"/>
+  <text x="100" y="35" font-family="Georgia, serif" font-size="28" font-weight="600" fill="#1a1a1a" text-anchor="middle">NACRA</text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="middle">National Annual Corporate Report Awards</text>
+  <path d="M30 65 L50 65 M150 65 L170 65" stroke="#D4AF37" stroke-width="2"/>
+</svg>
