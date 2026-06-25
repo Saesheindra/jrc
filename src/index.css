@@ -638,14 +638,7 @@ body.menu-open { overflow: hidden; }
   transition: background .35s;
 }
 .cred::before {
-  counter-increment: cred;
-  content: "0" counter(cred);
-  display: block;
-  font-family: 'Spline Sans Mono', monospace;
-  font-size: 10px;
-  letter-spacing: .24em;
-  color: var(--gold-deep);
-  margin-bottom: 10px;
+  display: none;
 }
 .cred:hover { background: rgba(212, 175, 55, .07); }
 .cred-link {

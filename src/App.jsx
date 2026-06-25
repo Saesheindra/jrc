@@ -47,7 +47,7 @@ const frameworks = [
   { category: 'Index & Rating', name: 'FTSE4Good', desc: 'ESG index inclusion — incl. 4-star Bursa ratings' },
   { category: 'Carbon Standard', name: 'GHG Protocol', desc: 'Corporate carbon accounting, Scopes 1, 2 & 3' },
   { category: 'Industry Metrics', name: 'SASB', desc: 'Industry-specific sustainability accounting' },
-  { category: 'Value Creation', name: '<IR>', desc: 'Integrated Reporting framework' },
+  { category: 'Value Creation', name: 'Integrated Reporting', desc: 'Integrated Reporting framework' },
   { category: 'Capital Markets', name: 'Bursa SRG', desc: 'Bursa Malaysia SRG (3rd Edition) & MMLR' }
 ]
 
