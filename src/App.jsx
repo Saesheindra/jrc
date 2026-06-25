@@ -319,7 +319,7 @@ function App() {
             <div className="rv d1">
               <p>JRC has played a key role in the successful adoption of integrated reporting by many of the region's leading public-listed organisations — long before sustainability disclosure became a boardroom mandate.</p>
               <p>Our diverse client base spans oil & gas, property development, REITs, construction, aviation, energy, utilities, water, finance, retail and technology — including large conglomerates operating both in Malaysia and internationally.</p>
-              <p>As a licensed IFRS Training Partner and a member of the IFRS Sustainability Alliance, JRC works at the frontier of IFRS S1/S2 implementation — and maintains regular engagement with Bursa Malaysia and SIDC to advance reporting standards for PLCs.</p>
+              <p>As a licensed IFRS Training Partner and a member of the IFRS Sustainability Alliance, JRC works at the frontier of IFRS S1 & IFRS S2 implementation — and maintains regular engagement with Bursa Malaysia and SIDC to advance reporting standards for PLCs.</p>
             </div>
             <div className="stat-grid rv d2">
               <div className="stat">

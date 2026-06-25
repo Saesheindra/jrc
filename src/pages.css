@@ -88,6 +88,9 @@
   text-underline-offset: 6px;
   text-decoration-thickness: 1px;
 }
+.exp-title em::after {
+  display: none;
+}
 .exp-desc {
   font-size: 16px;
   color: var(--fog);
@@ -2759,6 +2762,10 @@
 .events-hero h1 em {
   font-style: italic;
   color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 .events-hero p {
   font-size: 18px;

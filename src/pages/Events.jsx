@@ -198,7 +198,7 @@ function Events() {
         <div className="container">
           <div className="events-hero-content">
             <div className="eyebrow">Events.</div>
-            <h1>Workshops, Webcasts & <em>Collaboration</em></h1>
+            <h1>Workshops, Webcasts & <em>Collaboration.</em></h1>
             <p>Building capacity for better disclosure through hands-on training, expert-led workshops, and thought leadership sessions on sustainability reporting.</p>
           </div>
         </div>
