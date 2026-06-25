@@ -11,7 +11,7 @@ const services = [
     title: 'Training',
     desc: 'IFRS-licensed workshops for boards, management and the people who handle the data.',
     items: [
-      'IFRS S1/S2 & Integrated Reporting',
+      'IFRS S1 & IFRS S2',
       'Climate Risk Assessment & scenario planning',
       'Carbon, materiality & board briefings'
     ]
