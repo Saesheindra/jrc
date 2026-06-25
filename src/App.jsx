@@ -411,7 +411,7 @@ function App() {
         <div className="container rv">
           <div className="eyebrow" style={{ justifyContent: 'center' }}>05 · Get in touch.</div>
           <h2>Ready to elevate <em>your next report?</em></h2>
-          <p>Whether you're preparing for IFRS S1/S2, improving ESG performance, or embarking on your first Integrated Report, we'd love to explore how we can help.</p>
+          <p>Whether you're preparing for IFRS S1 & IFRS S2, improving ESG performance, or embarking on your first Integrated Report, we'd love to explore how we can help.</p>
           <a className="email" href="mailto:jr@jr.com.my">jr@jr.com.my</a>
         </div>
       </section>
