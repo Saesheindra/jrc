@@ -23,7 +23,7 @@ const expertiseAreas = [
     number: '02',
     kicker: 'Creating Sustainable Value.',
     title: 'Integrated Reporting',
-    titleEm: '<IR> Advisory.',
+    titleEm: 'Advisory.',
     description: 'End-to-end integrated reporting advisory connecting strategy, governance, performance, and prospects to create compelling value-creation narratives.',
     services: [
       { title: 'Integrated Thinking Workshops', desc: 'Leadership alignment on value creation', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop' },
