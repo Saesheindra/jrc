@@ -309,7 +309,7 @@ function Events() {
         <div className="container">
           <div className="collaborate-content rv">
             <h2>Let's <em>Collaborate</em></h2>
-            <p>We believe the best outcomes happen when bold ideas come together. Looking for customized training for your organization?</p>
+            <p>We believe the best outcomes happen when bold ideas come together. Looking for customised training for your organisation?</p>
             <div className="collaborate-actions">
               <a href="mailto:jr@jr.com.my" className="collab-btn primary">Get In Touch</a>
               <Link to="/#contact" className="collab-btn secondary">View Contact Details</Link>
