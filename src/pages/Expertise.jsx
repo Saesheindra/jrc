@@ -8,7 +8,7 @@ const expertiseAreas = [
     id: 'ifrs',
     number: '01',
     kicker: 'Climate-Related Financial Disclosures.',
-    title: 'IFRS S1 & S2 IFRS',
+    title: 'IFRS S1 & IFRS S2',
     titleEm: 'Disclosure Readiness.',
     description: 'Comprehensive support for IFRS Sustainability Disclosure Standards implementation, including climate risk assessments, scenario analysis, and disclosure readiness.',
     services: [
