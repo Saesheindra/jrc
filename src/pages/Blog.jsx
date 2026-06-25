@@ -31,7 +31,7 @@ const articles = [
   },
   {
     title: 'IFRS S1 & S2 Implementation Progress for Malaysian PLCs',
-    excerpt: 'As a licensed IFRS Training Partner and member of the IFRS Sustainability Alliance, JRC works at the frontier of IFRS S1/S2 implementation with regular engagement with Bursa Malaysia and SIDC.',
+    excerpt: 'As a licensed IFRS Training Partner and member of the IFRS Sustainability Alliance, JRC works at the frontier of IFRS S1 & IFRS S2 implementation with regular engagement with Bursa Malaysia and SIDC.',
     category: 'IFRS',
     link: 'https://www.linkedin.com/posts/joshua-rayan-communications_ifrs-reporting-progress-activity-7408696754772201472-0J_g'
   },
@@ -311,7 +311,7 @@ function Blog() {
               </div>
               <select name="subject" required>
                 <option value="">Select Subject</option>
-                <option value="IFRS S1/S2">IFRS S1/S2</option>
+                <option value="IFRS S1 & IFRS S2">IFRS S1 & IFRS S2</option>
                 <option value="Integrated Reporting">Integrated Reporting</option>
                 <option value="ESG Strategy">ESG Strategy</option>
                 <option value="General Inquiry">General Inquiry</option>

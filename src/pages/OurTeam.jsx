@@ -291,7 +291,7 @@ function OurTeam() {
               </div>
               <select name="subject" required>
                 <option value="">Select Subject</option>
-                <option value="IFRS S1/S2">IFRS S1/S2</option>
+                <option value="IFRS S1 & IFRS S2">IFRS S1 & IFRS S2</option>
                 <option value="Integrated Reporting">Integrated Reporting</option>
                 <option value="ESG Strategy">ESG Strategy</option>
                 <option value="General Inquiry">General Inquiry</option>
