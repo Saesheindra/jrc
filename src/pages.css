@@ -3415,7 +3415,7 @@
   font-family: 'Newsreader', serif;
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 400;
-  color: var(--ink);
+  color: #000;
   margin-bottom: 16px;
 }
 .collaborate-content h2 em {
