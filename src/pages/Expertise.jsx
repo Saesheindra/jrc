@@ -8,7 +8,8 @@ const expertiseAreas = [
     id: 'ifrs',
     number: '01',
     kicker: 'Climate-Related Financial Disclosures.',
-    title: 'IFRS S1 & S2 IFRS Disclosure Readiness',
+    title: 'IFRS S1 & S2 IFRS',
+    titleEm: 'Disclosure Readiness.',
     description: 'Comprehensive support for IFRS Sustainability Disclosure Standards implementation, including climate risk assessments, scenario analysis, and disclosure readiness.',
     services: [
       { title: 'IFRS S1 & IFRS S2 Gap Analysis', desc: 'Roadmap development for compliance readiness', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop' },
@@ -21,7 +22,8 @@ const expertiseAreas = [
     id: 'ir',
     number: '02',
     kicker: 'Creating Sustainable Value.',
-    title: 'Integrated Reporting <IR> Advisory',
+    title: 'Integrated Reporting',
+    titleEm: '<IR> Advisory.',
     description: 'End-to-end integrated reporting advisory connecting strategy, governance, performance, and prospects to create compelling value-creation narratives.',
     services: [
       { title: 'Integrated Thinking Workshops', desc: 'Leadership alignment on value creation', image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop' },
@@ -36,7 +38,8 @@ const expertiseAreas = [
     id: 'esg',
     number: '03',
     kicker: 'Capacity Development.',
-    title: 'ESG Strategy, KPIs and Target Setting',
+    title: 'ESG Strategy, KPIs and',
+    titleEm: 'Target Setting.',
     description: 'Comprehensive ESG strategy development, policy design, and KPI frameworks to drive sustainable business performance.',
     services: [
       { title: 'Double Materiality Assessments', desc: 'Identify and prioritize sustainability topics that matter most to your stakeholders and business. Align with CSRD requirements and enhance strategic decision-making through comprehensive impact and financial materiality analysis.', image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop' },
@@ -49,7 +52,8 @@ const expertiseAreas = [
     id: 'assessments',
     number: '04',
     kicker: 'Technical Expertise.',
-    title: 'Specialised Sustainability Assessments',
+    title: 'Specialised Sustainability',
+    titleEm: 'Assessments.',
     description: 'Deep-dive technical assessments covering carbon accounting, biodiversity, human rights, and emerging sustainability challenges.',
     services: [
       { title: 'GHG Inventory', desc: 'Scope 1, 2 & 3 carbon accounting', image: 'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&h=400&fit=crop' },
@@ -168,10 +172,9 @@ function Expertise() {
         <section key={area.id} id={area.id} className="exp-section">
           <div className="container">
             <div className="exp-header rv">
-              <div className="exp-number">{area.number}</div>
               <div>
-                <div className="exp-kicker">{area.kicker}</div>
-                <h2 className="exp-title">{area.title}</h2>
+                <div className="eyebrow">{area.number} · {area.kicker}</div>
+                <h2 className="exp-title">{area.title} <em>{area.titleEm}</em></h2>
                 <p className="exp-desc">{area.description}</p>
               </div>
             </div>

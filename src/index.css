@@ -142,13 +142,15 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
+  background: rgba(14, 12, 9, 0.95);
+  backdrop-filter: blur(14px);
   transition: background .4s, border-color .4s, transform .5s var(--ease);
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 header.scrolled {
-  background: rgba(14, 12, 9, 0.92);
+  background: rgba(14, 12, 9, 0.98);
   backdrop-filter: blur(14px);
-  border-color: var(--line);
+  border-color: rgba(255,255,255,0.1);
 }
 header.hdr-hide { transform: translateY(-100%); }
 
@@ -167,13 +169,13 @@ header.hdr-hide { transform: translateY(-100%); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 64px;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   margin-right: 40px;
 }
@@ -191,16 +193,16 @@ header.hdr-hide { transform: translateY(-100%); }
   color: var(--fog);
 }
 .brand-logo {
-  height: 56px;
+  height: 36px;
   width: auto;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 .brand-name {
   font-family: 'Archivo', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 400;
-  letter-spacing: 0.18em;
-  color: var(--fog);
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.7);
   white-space: nowrap;
   text-transform: uppercase;
 }
@@ -219,29 +221,26 @@ nav.links {
   gap: 28px;
   align-items: center;
 }
+nav.links > a,
+nav.links > .nav-dd {
+  margin: 0;
+  padding: 0;
+}
 nav.links a {
   position: relative;
-  color: #CFC9BB;
+  color: rgba(255,255,255,0.75);
   text-decoration: none;
-  font-size: 12.5px;
-  letter-spacing: .1em;
+  font-size: 11px;
+  letter-spacing: .12em;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 13px 0;
+  padding: 8px 0;
   transition: color .3s;
+  white-space: nowrap;
 }
 nav.links a:not(.btn)::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 8px;
-  width: 0;
-  height: 1px;
-  background: var(--gold);
-  transition: width .35s var(--ease);
+  display: none;
 }
-nav.links a:not(.btn):hover::after,
-nav.links a.active::after { width: 100%; }
 nav.links a:not(.btn):hover,
 nav.links a.active { color: var(--gold); }
 
@@ -253,11 +252,12 @@ nav.links a.active { color: var(--gold); }
   color: var(--ink);
   text-decoration: none;
   font-weight: 600;
-  font-size: 12.5px;
-  letter-spacing: .1em;
+  font-size: 11px;
+  letter-spacing: .12em;
   text-transform: uppercase;
-  padding: 14px 28px;
-  border: 1px solid var(--gold);
+  padding: 12px 24px;
+  border: 1.5px solid var(--gold);
+  border-radius: 3px;
   position: relative;
   overflow: hidden;
   transition: background .3s, color .3s, box-shadow .3s, transform .3s var(--ease);
@@ -284,12 +284,16 @@ nav.links a.active { color: var(--gold); }
 
 .btn.ghost {
   background: transparent;
-  color: var(--paper);
-  border-color: var(--gold);
+  color: #fff;
+  border: 1.5px solid var(--gold);
+  border-radius: 3px;
+  padding: 10px 22px;
+  font-weight: 500;
 }
 .btn.ghost:hover {
+  background: var(--gold);
   border-color: var(--gold);
-  color: var(--gold);
+  color: var(--ink);
 }
 
 /* Contact dropdown */

@@ -68,25 +68,10 @@
 }
 
 .exp-header {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 30px;
   margin-bottom: 50px;
 }
-.exp-number {
-  font-family: 'Spline Sans Mono', monospace;
-  font-size: 12px;
-  letter-spacing: .2em;
-  color: var(--gold-deep);
-  padding-top: 12px;
-}
-.exp-kicker {
-  font-family: 'Spline Sans Mono', monospace;
-  font-size: 11px;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
+.exp-header .eyebrow {
+  margin-bottom: 20px;
 }
 .exp-title {
   font-family: 'Newsreader', serif;
@@ -94,6 +79,14 @@
   font-size: clamp(28px, 3vw, 42px);
   line-height: 1.15;
   margin-bottom: 16px;
+}
+.exp-title em {
+  font-style: italic;
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 .exp-desc {
   font-size: 16px;
@@ -167,7 +160,7 @@
 
 @media (max-width: 900px) {
   .exp-grid { grid-template-columns: repeat(2, 1fr); }
-  .exp-header { grid-template-columns: 1fr; gap: 16px; }
+  .exp-header { margin-bottom: 30px; }
 }
 @media (max-width: 600px) {
   .exp-grid { grid-template-columns: 1fr; }
@@ -2959,6 +2952,9 @@
   font-style: italic;
   color: var(--gold);
 }
+.no-events-content h2 em::after {
+  display: none;
+}
 .no-events-content p {
   font-size: 17px;
   line-height: 1.7;
@@ -3113,6 +3109,9 @@
   font-style: italic;
   color: var(--gold);
 }
+.programs-header h2 em::after {
+  display: none;
+}
 .programs-header p {
   font-size: 16px;
   color: var(--fog);
@@ -3215,6 +3214,9 @@
 .showcase-text h2 em {
   font-style: italic;
   color: var(--gold-deep);
+}
+.showcase-text h2 em::after {
+  display: none;
 }
 .showcase-subtitle {
   font-size: 18px;
@@ -3327,6 +3329,9 @@
 .past-events-header h2 em {
   font-style: italic;
   color: var(--gold);
+}
+.past-events-header h2 em::after {
+  display: none;
 }
 .past-events-grid {
   display: grid;
