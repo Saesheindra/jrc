@@ -139,19 +139,31 @@ function Expertise() {
         </nav>
       </div>
 
-      {/* Training Hero Section */}
-      <section className="training-hero" id="workshop">
-        <div className="training-hero-bg"></div>
+      {/* Hero Section */}
+      <section className="page-hero">
         <div className="container">
-          <div className="training-hero-content rv">
-            <div className="training-label">
-              <span>JRC</span> / <span className="gold">TRAINING</span>
-            </div>
-            <h1>Workshops that build <em>capability</em> in your team.</h1>
-            <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on, and built so your team can do the work themselves afterwards.</p>
-            <div className="training-buttons">
-              <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
-              <button onClick={() => scrollToSection('what-we-run')} className="btn training-btn-outline">WHAT WE RUN</button>
+          <div className="eyebrow">Our Expertise.</div>
+          <h1>The full sustainability <em>spectrum.</em></h1>
+          <p>A comprehensive range of ESG advisory, integrated reporting, and climate disclosure solutions for organisations across Malaysia, Indonesia, and Singapore.</p>
+        </div>
+      </section>
+
+      {/* 01 - Training Section */}
+      <section className="training-section" id="workshop">
+        <div className="training-hero-inner">
+          <div className="training-hero-bg"></div>
+          <div className="container">
+            <div className="training-hero-content rv">
+              <div className="training-label">
+                <span className="section-number">01</span>
+                <span>JRC</span> / <span className="gold">TRAINING</span>
+              </div>
+              <h2>Workshops that build <em>capability</em> in your team.</h2>
+              <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on, and built so your team can do the work themselves afterwards.</p>
+              <div className="training-buttons">
+                <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
+                <button onClick={() => scrollToSection('what-we-run')} className="btn training-btn-outline">WHAT WE RUN</button>
+              </div>
             </div>
           </div>
         </div>

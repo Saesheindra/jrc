@@ -59,12 +59,16 @@
   min-height: 100vh;
 }
 
-/* Training Hero Section */
-.training-hero {
-  min-height: 85vh;
+/* Training Section */
+.training-section {
+  border-top: 1px solid var(--line);
+}
+
+.training-hero-inner {
+  min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 140px 0 100px;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
 }
@@ -94,23 +98,31 @@
   text-transform: uppercase;
   color: var(--fog);
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.training-label .section-number {
+  color: var(--gold);
+  font-weight: 500;
 }
 
 .training-label .gold {
   color: var(--gold);
 }
 
-.training-hero h1 {
+.training-hero-content h2 {
   font-family: 'Newsreader', serif;
   font-weight: 300;
-  font-size: clamp(42px, 5.5vw, 72px);
+  font-size: clamp(36px, 5vw, 64px);
   line-height: 1.08;
   letter-spacing: -0.02em;
   margin-bottom: 28px;
   color: var(--paper);
 }
 
-.training-hero h1 em {
+.training-hero-content h2 em {
   font-style: italic;
   color: var(--gold);
   font-weight: 400;
