@@ -195,7 +195,6 @@
 .training-hero-content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
 }
 
 .training-label {
@@ -235,10 +234,10 @@
 }
 
 .training-hero-content p {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--fog);
-  line-height: 1.75;
-  max-width: 580px;
+  line-height: 1.7;
+  max-width: 700px;
   margin-bottom: 36px;
 }
 
