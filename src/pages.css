@@ -3592,23 +3592,23 @@
   transform: scale(1.2);
 }
 
-/* In the Room 2026 - Photo Gallery */
+/* In the Room 2026 - Photo Gallery (Dark Mode) */
 .in-room-section {
   padding: 120px 0;
-  background: var(--paper);
-  color: var(--ink);
+  background: #0a0a0a;
+  color: #fff;
 }
 .in-room-header {
-  text-align: center;
-  margin-bottom: 60px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 .in-room-header .in-room-label {
   font-family: 'Spline Sans Mono', monospace;
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--fog);
-  margin-bottom: 20px;
+  color: var(--gold);
+  margin-bottom: 16px;
 }
 .in-room-header h2 {
   font-family: 'Newsreader', serif;
@@ -3616,61 +3616,56 @@
   font-weight: 400;
   line-height: 1.15;
   margin-bottom: 16px;
-  color: var(--ink);
+  color: #fff;
 }
 .in-room-header h2 em {
   font-style: italic;
-  color: var(--gold-deep);
+  color: var(--gold);
 }
 .in-room-header h2 em::after {
   display: none;
 }
 .in-room-desc {
   font-size: 16px;
-  color: #555;
+  color: #999;
   line-height: 1.8;
   max-width: 640px;
-  margin: 0 auto 12px;
+  margin: 0 0 12px 0;
 }
 .in-room-hint {
   font-family: 'Spline Sans Mono', monospace;
   font-size: 12px;
-  color: #888;
+  color: #666;
   letter-spacing: 0.05em;
 }
 
 /* Sessions Photo Gallery Grid */
 .sessions-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 .session-photo {
   margin: 0;
   cursor: pointer;
   overflow: hidden;
-  border-radius: 8px;
-  background: #f8f8f5;
+  border-radius: 6px;
+  background: #1a1a1a;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 .session-photo:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  transform: scale(1.02);
 }
 .session-photo img {
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
-  padding: 20px;
-  background: #fff;
   transition: all 0.4s ease;
 }
 .session-photo:hover img {
-  transform: scale(1.02);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 .session-overlay {
   position: absolute;
@@ -3681,8 +3676,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 24px;
-  background: linear-gradient(to top, rgba(26,26,26,0.95) 0%, rgba(26,26,26,0.7) 40%, rgba(26,26,26,0.3) 70%, transparent 100%);
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -3692,30 +3687,25 @@
 .session-title {
   display: block;
   font-family: 'Newsreader', serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #fff;
   line-height: 1.4;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .session-meta {
   display: block;
   font-family: 'Spline Sans Mono', monospace;
-  font-size: 11px;
+  font-size: 10px;
   color: var(--gold);
   letter-spacing: 0.03em;
 }
 
 /* Responsive for sessions gallery */
-@media (max-width: 1200px) {
-  .sessions-gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media (max-width: 900px) {
   .sessions-gallery {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 10px;
   }
 }
 @media (max-width: 600px) {
@@ -3723,11 +3713,14 @@
     padding: 80px 0;
   }
   .sessions-gallery {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
-  .session-photo figcaption {
-    padding: 12px 14px;
+  .session-overlay {
+    padding: 12px;
+  }
+  .session-title {
+    font-size: 12px;
   }
 }
 

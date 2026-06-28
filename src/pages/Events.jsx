@@ -59,33 +59,33 @@ const pastWorkshops = [
   { name: 'KPS Berhad', image: '/assets/ifrs/KPS Berhad.png', type: 'ESG KPIs Training' }
 ]
 
-// Recent Workshop Sessions 2026 - Using CRA company logos as placeholders
+// Recent Workshop Sessions 2026
 const recentSessions = [
-  { image: '/assets/cra/Mah Sing.png', title: 'IFRS S1 & S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
-  { image: '/assets/cra/Mah Sing.png', title: 'Walking the room through the standards', company: 'Mah Sing', date: 'Jan 2026' },
-  { image: '/assets/cra/ANRB.png', title: 'Facilitating a Climate Risk Assessment', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/cra/ANRB.png', title: 'Hands-on scenario exercise', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/cra/ANRB.png', title: 'The workshop cohort', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/cra/SkyWorld.png', title: 'ESG training in session', company: 'SkyWorld', date: 'Feb 2026' },
-  { image: '/assets/cra/SkyWorld.png', title: 'A full house for ESG training', company: 'SkyWorld', date: 'Feb 2026' },
-  { image: '/assets/cra/Taliworks.png', title: 'Leading the room', company: 'Ranhill SAJ', date: 'Mar 2026' },
-  { image: '/assets/cra/Taliworks.png', title: 'Table-by-table climate risk work', company: 'Ranhill SAJ', date: 'Mar 2026' },
-  { image: '/assets/cra/Hengyuan Refining Company.png', title: 'Climate Risk Assessment briefing', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/cra/Hengyuan Refining Company.png', title: 'Working through the scenarios', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/cra/Hengyuan Refining Company.png', title: 'The Ranhill Power cohort', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/cra/LBS Bina.png', title: 'Climate Risk Assessment workshop', company: 'Land & General', date: 'Jan 2026' },
-  { image: '/assets/cra/LBS Bina.png', title: 'Hands-on breakout', company: 'Land & General', date: 'Jan 2026' },
-  { image: '/assets/cra/MMC Corp.png', title: 'Climate Risk Assessment, full cohort', company: 'Hong Leong', date: 'Apr 2026' },
-  { image: '/assets/cra/MMC Corp.png', title: 'Breakout groups at work', company: 'Hong Leong', date: 'Apr 2026' },
-  { image: '/assets/cra/MMC Corp.png', title: 'Climate Value-at-Risk workshop', company: 'Hong Leong', date: 'May 2026' },
-  { image: '/assets/cra/MMC Corp.png', title: 'The Climate VaR cohort', company: 'Hong Leong', date: 'May 2026' },
-  { image: '/assets/cra/Paramount Corporation.png', title: 'Double Materiality Assessment session', company: 'Apollo', date: 'Apr 2026' },
-  { image: '/assets/cra/Paramount Corporation.png', title: 'Working the materiality matrix', company: 'Apollo', date: 'Apr 2026' },
-  { image: '/assets/cra/CHGB.png', title: 'Reporting briefing', company: 'HCIB', date: 'Apr 2026' },
-  { image: '/assets/cra/CHGB.png', title: 'Heads-down working session', company: 'HCIB', date: 'Apr 2026' },
-  { image: '/assets/cra/Paramount Corporation.png', title: 'On-site operations walkthrough', company: 'Apollo', date: 'Mar 2026' },
-  { image: '/assets/cra/Berjaya Langkawi Resort.png', title: 'One-to-one facilitation', company: 'Berjaya', date: 'Apr 2026' },
-  { image: '/assets/cra/Berjaya Langkawi Resort.png', title: 'The engagement cohort', company: 'Berjaya', date: 'Apr 2026' }
+  { image: '/assets/sessions/t01-mah-sing-ifrs.jpg', title: 'IFRS S1 & S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
+  { image: '/assets/sessions/t02-mah-sing-ifrs.jpg', title: 'Walking the room through the standards', company: 'Mah Sing', date: 'Jan 2026' },
+  { image: '/assets/sessions/t03-ame-cra.jpg', title: 'Facilitating a Climate Risk Assessment', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/t04-ame-cra.jpg', title: 'Hands-on scenario exercise', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/t05-ame-cra.jpg', title: 'The workshop cohort', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/t06-skyworld.jpg', title: 'ESG training in session', company: 'SkyWorld', date: 'Feb 2026' },
+  { image: '/assets/sessions/t07-skyworld.jpg', title: 'A full house for ESG training', company: 'SkyWorld', date: 'Feb 2026' },
+  { image: '/assets/sessions/t08-ranhill-saj.jpg', title: 'Leading the room', company: 'Ranhill SAJ', date: 'Mar 2026' },
+  { image: '/assets/sessions/t09-ranhill-saj.jpg', title: 'Table-by-table climate risk work', company: 'Ranhill SAJ', date: 'Mar 2026' },
+  { image: '/assets/sessions/t10-ranhill-power.jpg', title: 'Climate Risk Assessment briefing', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/t11-ranhill-power.jpg', title: 'Working through the scenarios', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/t12-ranhill-power.jpg', title: 'The Ranhill Power cohort', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/t13-land-general.jpg', title: 'Climate Risk Assessment workshop', company: 'Land & General', date: 'Jan 2026' },
+  { image: '/assets/sessions/t14-land-general.jpg', title: 'Hands-on breakout', company: 'Land & General', date: 'Jan 2026' },
+  { image: '/assets/sessions/t15-hli-cra.jpg', title: 'Climate Risk Assessment, full cohort', company: 'Hong Leong', date: 'Apr 2026' },
+  { image: '/assets/sessions/t16-hli-cra.jpg', title: 'Breakout groups at work', company: 'Hong Leong', date: 'Apr 2026' },
+  { image: '/assets/sessions/t17-hli-cvar.jpg', title: 'Climate Value-at-Risk workshop', company: 'Hong Leong', date: 'May 2026' },
+  { image: '/assets/sessions/t18-hli-cvar.jpg', title: 'The Climate VaR cohort', company: 'Hong Leong', date: 'May 2026' },
+  { image: '/assets/sessions/t19-apollo-dma.jpg', title: 'Double Materiality Assessment session', company: 'Apollo', date: 'Apr 2026' },
+  { image: '/assets/sessions/t20-apollo-dma.jpg', title: 'Working the materiality matrix', company: 'Apollo', date: 'Apr 2026' },
+  { image: '/assets/sessions/t21-hcib.jpg', title: 'Reporting briefing', company: 'HCIB', date: 'Apr 2026' },
+  { image: '/assets/sessions/t22-hcib.jpg', title: 'Heads-down working session', company: 'HCIB', date: 'Apr 2026' },
+  { image: '/assets/sessions/t23-apollo-site.jpg', title: 'On-site operations walkthrough', company: 'Apollo', date: 'Mar 2026' },
+  { image: '/assets/sessions/t24-berjaya.jpg', title: 'One-to-one facilitation', company: 'Berjaya', date: 'Apr 2026' },
+  { image: '/assets/sessions/t25-berjaya.jpg', title: 'The engagement cohort', company: 'Berjaya', date: 'Apr 2026' }
 ]
 
 // CRA Clients
