@@ -59,6 +59,35 @@ const pastWorkshops = [
   { name: 'KPS Berhad', image: '/assets/ifrs/KPS Berhad.png', type: 'ESG KPIs Training' }
 ]
 
+// Recent Workshop Sessions 2026
+const recentSessions = [
+  { image: '/assets/sessions/session-1.jpg', title: 'IFRS S1 & S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
+  { image: '/assets/sessions/session-2.jpg', title: 'Walking the room through the standards', company: 'Mah Sing', date: 'Jan 2026' },
+  { image: '/assets/sessions/session-3.jpg', title: 'Facilitating a Climate Risk Assessment', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-4.jpg', title: 'Hands-on scenario exercise', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-5.jpg', title: 'The workshop cohort', company: 'AME', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-6.jpg', title: 'ESG training in session', company: 'SkyWorld', date: 'Feb 2026' },
+  { image: '/assets/sessions/session-7.jpg', title: 'A full house for ESG training', company: 'SkyWorld', date: 'Feb 2026' },
+  { image: '/assets/sessions/session-8.jpg', title: 'Leading the room', company: 'Ranhill SAJ', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-9.jpg', title: 'Table-by-table climate risk work', company: 'Ranhill SAJ', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-10.jpg', title: 'Climate Risk Assessment briefing', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-11.jpg', title: 'Working through the scenarios', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-12.jpg', title: 'The Ranhill Power cohort', company: 'Ranhill Power', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-13.jpg', title: 'Climate Risk Assessment workshop', company: 'Land & General', date: 'Jan 2026' },
+  { image: '/assets/sessions/session-14.jpg', title: 'Hands-on breakout', company: 'Land & General', date: 'Jan 2026' },
+  { image: '/assets/sessions/session-15.jpg', title: 'Climate Risk Assessment, full cohort', company: 'Hong Leong', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-16.jpg', title: 'Breakout groups at work', company: 'Hong Leong', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-17.jpg', title: 'Climate Value-at-Risk workshop', company: 'Hong Leong', date: 'May 2026' },
+  { image: '/assets/sessions/session-18.jpg', title: 'The Climate VaR cohort', company: 'Hong Leong', date: 'May 2026' },
+  { image: '/assets/sessions/session-19.jpg', title: 'Double Materiality Assessment session', company: 'Apollo', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-20.jpg', title: 'Working the materiality matrix', company: 'Apollo', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-21.jpg', title: 'Reporting briefing', company: 'HCIB', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-22.jpg', title: 'Heads-down working session', company: 'HCIB', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-23.jpg', title: 'On-site operations walkthrough', company: 'Apollo', date: 'Mar 2026' },
+  { image: '/assets/sessions/session-24.jpg', title: 'One-to-one facilitation', company: 'Berjaya', date: 'Apr 2026' },
+  { image: '/assets/sessions/session-25.jpg', title: 'The engagement cohort', company: 'Berjaya', date: 'Apr 2026' }
+]
+
 // CRA Clients
 const craClients = [
   'Ajiya', 'Ann Joo', 'ANRB', 'Ayer', 'BATM', 'Berjaya Langkawi Resort',
@@ -243,38 +272,25 @@ function Events() {
         </div>
       </section>
 
-      {/* In the Room 2026 - Recent Sessions */}
-      <section className="clients-showcase-minimal">
+      {/* In the Room 2026 - Recent Sessions Photo Gallery */}
+      <section className="in-room-section">
         <div className="container">
-          <div className="showcase-split rv">
-            <div className="showcase-text">
-              <div className="in-room-label">In the room · 2026</div>
-              <h2>Recent <em>sessions.</em></h2>
-              <p className="showcase-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
-            </div>
-            <div className="showcase-slider">
-              <div className="slider-container">
-                {craClients.map((client, i) => (
-                  <div
-                    key={client}
-                    className={`slide ${i === currentSlide ? 'active' : ''}`}
-                  >
-                    <img src={`/assets/cra/${client}.png`} alt={client} />
-                  </div>
-                ))}
-              </div>
-              <div className="slider-caption">{craClients[currentSlide]}</div>
-              <div className="slider-dots">
-                {craClients.map((_, i) => (
-                  <button
-                    key={i}
-                    className={`dot ${i === currentSlide ? 'active' : ''}`}
-                    onClick={() => setCurrentSlide(i)}
-                    aria-label={`Go to slide ${i + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
+          <div className="in-room-header rv">
+            <div className="in-room-label">In the room · 2026</div>
+            <h2>Recent <em>sessions.</em></h2>
+            <p className="in-room-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
+            <p className="in-room-hint">— Tap any photo to view it larger</p>
+          </div>
+          <div className="sessions-gallery">
+            {recentSessions.map((session, i) => (
+              <figure key={i} className="session-photo rv" style={{ animationDelay: `${i * 0.05}s` }}>
+                <img src={session.image} alt={session.title} loading="lazy" />
+                <figcaption>
+                  <span className="session-title">{session.title}</span>
+                  <span className="session-meta">{session.company} · {session.date}</span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
