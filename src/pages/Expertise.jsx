@@ -66,6 +66,10 @@ const advisoryServices = [
   {
     title: 'Assurance-Readiness',
     description: 'Getting data, controls and evidence in shape so external assurance is a confirmation, not a scramble.'
+  },
+  {
+    title: 'Biodiversity & TNFD Assessment',
+    description: 'Biodiversity and TNFD assessments that identify nature-related risks, opportunities and dependencies to support strategic planning and disclosure readiness.'
   }
 ]
 
