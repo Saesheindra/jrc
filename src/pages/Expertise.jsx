@@ -3,6 +3,45 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
+const advisoryServices = [
+  {
+    title: 'ESG Strategy & Policy',
+    description: 'Setting the direction, governance and policies — including 3–5 year sustainability roadmaps, and guiding the board and senior management through implementation.'
+  },
+  {
+    title: 'Double Materiality Assessment',
+    description: 'Running the impact and financial materiality lenses with your stakeholders to define what the report must cover.'
+  },
+  {
+    title: 'GHG Inventory & Carbon Accounting',
+    description: 'Scopes 1, 2 & 3 to the GHG Protocol — boundaries, emission factors and an evidence trail that holds up.'
+  },
+  {
+    title: 'Climate Risk & Climate VaR',
+    description: 'Physical climate risk assessment at the ground — we visit your sites to understand land, assets and surroundings — plus transition risk, IFRS S2 scenarios and Climate Value-at-Risk.'
+  },
+  {
+    title: 'SMART KPIs & Target-Setting',
+    description: 'Turning ambition into measurable, time-bound targets the board can govern and the market can track.'
+  },
+  {
+    title: 'Life Cycle Assessment',
+    description: 'Product and process LCA to understand impact hotspots and support credible environmental claims.'
+  },
+  {
+    title: 'Labour & Human Rights',
+    description: 'Assignments and assessments to address the social dimension — workforce, community and rights-based due diligence.'
+  },
+  {
+    title: 'Supply Chain & Corruption Risk',
+    description: 'Assessing supply chain and anti-corruption exposure in line with local laws and good governance expectations.'
+  },
+  {
+    title: 'Assurance-Readiness',
+    description: 'Getting data, controls and evidence in shape so external assurance is a confirmation, not a scramble.'
+  }
+]
+
 const trainingServices = [
   {
     tag: 'S1 · S2',
@@ -180,6 +219,47 @@ function Expertise() {
           </div>
           <div className="training-grid rv">
             {trainingServices.map((service, i) => (
+              <div key={i} className="training-card">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 02 - Advisory Section */}
+      <section className="training-section" id="advisory">
+        <div className="training-hero-inner">
+          <div className="training-hero-bg"></div>
+          <div className="container">
+            <div className="training-hero-content rv">
+              <div className="training-label">
+                <span>02.</span> <span>JRC</span> / <span className="gold">ADVISORY</span>
+              </div>
+              <h2>ESG advice that <em>holds up</em> in the report.</h2>
+              <p>We help listed companies decide what matters, measure it properly, and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
+              <div className="training-buttons">
+                <a href="mailto:jr@jr.com.my?subject=Advisory Inquiry" className="btn training-btn-gold">START A CONVERSATION</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Advise On Section */}
+      <section className="what-we-run" id="what-we-advise">
+        <div className="container">
+          <div className="what-we-run-header rv">
+            <div className="what-we-run-label">
+              <span className="label-line"></span>
+              <span>WHAT WE ADVISE ON</span>
+            </div>
+            <h2>The whole ESG programme, <em>joined up.</em></h2>
+            <p>Strategy, measurement and targets — handled together, and always with the report in mind.</p>
+          </div>
+          <div className="training-grid rv">
+            {advisoryServices.map((service, i) => (
               <div key={i} className="training-card">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
