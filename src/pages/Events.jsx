@@ -243,18 +243,14 @@ function Events() {
         </div>
       </section>
 
-      {/* CRA Clients Showcase - Minimalist Split Layout with Slider */}
+      {/* In the Room 2026 - Recent Sessions */}
       <section className="clients-showcase-minimal">
         <div className="container">
           <div className="showcase-split rv">
             <div className="showcase-text">
-              <h2>Companies We've <em>Trained</em></h2>
-              <p className="showcase-subtitle">Building climate resilience across industries</p>
-              <p className="showcase-desc">We have conducted IFRS S2-aligned Climate Risk Assessment workshops for {craClients.length}+ Malaysian listed companies, helping them identify, assess, and disclose climate-related risks and opportunities.</p>
-              <div className="client-count">
-                <span className="count-number">{craClients.length}+</span>
-                <span className="count-label">Companies Trained</span>
-              </div>
+              <div className="in-room-label">In the room · 2026</div>
+              <h2>Recent <em>sessions.</em></h2>
+              <p className="showcase-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
             </div>
             <div className="showcase-slider">
               <div className="slider-container">

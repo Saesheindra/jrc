@@ -3475,6 +3475,14 @@
   color: var(--gold-deep);
   margin-bottom: 16px;
 }
+.in-room-label {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--fog);
+  margin-bottom: 20px;
+}
 .showcase-text h2 {
   font-family: 'Newsreader', serif;
   font-size: clamp(32px, 4vw, 48px);
