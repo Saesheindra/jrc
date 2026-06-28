@@ -176,10 +176,9 @@
 }
 
 .training-hero-inner {
-  min-height: 70vh;
   display: flex;
-  align-items: center;
-  padding: 100px 0;
+  align-items: flex-start;
+  padding: 80px 0 100px;
   position: relative;
   overflow: hidden;
 }
@@ -287,8 +286,9 @@
 
 /* What We Run Section */
 .what-we-run {
-  padding: 100px 0 120px;
-  background: var(--ink-2);
+  padding: 80px 0 100px;
+  background: var(--ink);
+  border-top: 1px solid var(--line);
 }
 
 .what-we-run-header {

@@ -155,13 +155,12 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span>01</span> / <span className="gold">TRAINING</span>
+                <span>01.</span> <span>JRC</span> / <span className="gold">TRAINING</span>
               </div>
               <h2>Workshops that build <em>capability</em> in your team.</h2>
               <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on, and built so your team can do the work themselves afterwards.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
-                <button onClick={() => scrollToSection('what-we-run')} className="btn training-btn-outline">WHAT WE RUN</button>
               </div>
             </div>
           </div>
@@ -182,7 +181,6 @@ function Expertise() {
           <div className="training-grid rv">
             {trainingServices.map((service, i) => (
               <div key={i} className="training-card">
-                <div className="training-card-tag">{service.tag}</div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </div>
