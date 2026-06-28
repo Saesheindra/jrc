@@ -1565,6 +1565,7 @@
 }
 
 .past-event-image {
+  width: 100%;
   height: 140px;
   position: relative;
   overflow: hidden;
@@ -1574,6 +1575,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   filter: grayscale(0.4);
   transition: filter .4s;
 }
@@ -3760,6 +3762,7 @@
   transform: translateY(-8px);
 }
 .past-event-image {
+  width: 100%;
   position: relative;
   aspect-ratio: 4/3;
   overflow: hidden;
