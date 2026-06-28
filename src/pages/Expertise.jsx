@@ -3,6 +3,33 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
+const reportingServices = [
+  {
+    title: 'Integrated Reports',
+    description: 'Value-creation reporting to the <IR> framework — strategy, governance and the six capitals woven into one story.'
+  },
+  {
+    title: 'Annual Reports',
+    description: 'Compliance-ready annual reporting in line with the MMLRs, drafted with editorial craft from cover to index.'
+  },
+  {
+    title: 'Sustainability Reports',
+    description: 'GRI-, IFRS-, FTSE- and Bursa-aligned sustainability disclosures that are credible and assurance-ready.'
+  },
+  {
+    title: 'Corporate Governance & MCCG',
+    description: 'CG statements and MCCG alignment that demonstrate genuine governance, not box-ticking.'
+  },
+  {
+    title: "Chairman's Statement & MD&A",
+    description: 'Leadership narratives and management discussion & analysis that frame performance with clarity and confidence.'
+  },
+  {
+    title: 'Bursa Compliance Content',
+    description: 'Statutory and sustainability content aligned to Bursa Malaysia\'s Sustainability Reporting Guide (3rd Edition) and MMLRs.'
+  }
+]
+
 const advisoryServices = [
   {
     title: 'ESG Strategy & Policy',
@@ -260,6 +287,46 @@ function Expertise() {
           </div>
           <div className="training-grid rv">
             {advisoryServices.map((service, i) => (
+              <div key={i} className="training-card">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 03 - Report Writing Section */}
+      <section className="training-section" id="reporting">
+        <div className="training-hero-inner">
+          <div className="training-hero-bg"></div>
+          <div className="container">
+            <div className="training-hero-content rv">
+              <div className="training-label">
+                <span>03.</span> <span>JRC</span> / <span className="gold">REPORT WRITING</span>
+              </div>
+              <h2>Reports that connect <em>strategy, governance & performance.</em></h2>
+              <p>This is where JRC started. For 24 years we've written the integrated, annual, sustainability and corporate governance reports that listed companies are judged on — and many have gone on to win awards.</p>
+              <div className="training-buttons">
+                <a href="mailto:jr@jr.com.my?subject=Report Writing Inquiry" className="btn training-btn-gold">COMMISSION A REPORT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Write Section */}
+      <section className="what-we-run" id="what-we-write">
+        <div className="container">
+          <div className="what-we-run-header rv">
+            <div className="what-we-run-label">
+              <span className="label-line"></span>
+              <span>WHAT WE WRITE</span>
+            </div>
+            <h2>Every report a listed company <em>has to get right.</em></h2>
+          </div>
+          <div className="training-grid rv">
+            {reportingServices.map((service, i) => (
               <div key={i} className="training-card">
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
