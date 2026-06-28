@@ -3,6 +3,54 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
+const trainingServices = [
+  {
+    tag: 'S1 · S2',
+    title: 'IFRS S1/S2 & Integrated Reporting',
+    description: 'Foundations of the IFRS Sustainability Disclosure Standards and the <IR> framework — governance, strategy, risk and metrics, made practical.'
+  },
+  {
+    tag: 'CRA',
+    title: 'Climate Risk Assessment',
+    description: 'Hands-on Climate Risk Assessment workshops aligned to the NSRF Climate-First approach — identifying physical and transition risks for your business.'
+  },
+  {
+    tag: 'IFRS S2',
+    title: 'Scenario Planning & Climate VaR',
+    description: 'IFRS S2-aligned scenario analysis and Climate Value-at-Risk — quantifying what climate pathways mean for strategy and the balance sheet.'
+  },
+  {
+    tag: 'GHG',
+    title: 'Carbon Accounting & GHG Management',
+    description: 'Building a defensible GHG inventory across Scopes 1, 2 & 3 to the GHG Protocol — boundaries, factors and data discipline.'
+  },
+  {
+    tag: 'DMA',
+    title: 'Materiality & Double Materiality',
+    description: 'Facilitated single and double materiality assessments — running the stakeholder and impact lens that anchors the whole report.'
+  },
+  {
+    tag: 'BOARD',
+    title: 'Board & C-Suite ESG Briefings',
+    description: 'Concise, strategic briefings that give directors the confidence to govern sustainability and challenge the numbers.'
+  },
+  {
+    tag: 'DATA',
+    title: 'Data-Owner Briefings',
+    description: 'Getting the people who hold the data ready to collect it, evidence it and own it — so the numbers behind your report stand up.'
+  },
+  {
+    tag: 'GRI',
+    title: 'Framework Deep-Dives',
+    description: 'Focused sessions on GRI, FTSE4Good, SASB and Bursa\'s Sustainability Reporting Guide for the teams who report against them.'
+  },
+  {
+    tag: 'CUSTOM',
+    title: 'Tailored In-House Programmes',
+    description: 'Built around your industry, your maturity and your reporting calendar — public webinars through to multi-day in-house series.'
+  }
+]
+
 function Expertise() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -33,6 +81,13 @@ function Expertise() {
     document.querySelectorAll('.rv').forEach((el) => observer.observe(el))
     return () => observer.disconnect()
   }, [])
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <div className="page-expertise">
@@ -90,6 +145,49 @@ function Expertise() {
           <div className="eyebrow">Our Expertise.</div>
           <h1>The full sustainability <em>spectrum.</em></h1>
           <p>A comprehensive range of ESG advisory, integrated reporting, and climate disclosure solutions for organisations across Malaysia, Indonesia, and Singapore.</p>
+        </div>
+      </section>
+
+      {/* 01 - Training Section */}
+      <section className="training-section" id="workshop">
+        <div className="training-hero-inner">
+          <div className="training-hero-bg"></div>
+          <div className="container">
+            <div className="training-hero-content rv">
+              <div className="training-label">
+                <span>JRC</span> / <span className="gold">TRAINING</span>
+              </div>
+              <h2>Workshops that build <em>capability</em> in your team.</h2>
+              <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on, and built so your team can do the work themselves afterwards.</p>
+              <div className="training-buttons">
+                <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
+                <button onClick={() => scrollToSection('what-we-run')} className="btn training-btn-outline">WHAT WE RUN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Run Section */}
+      <section className="what-we-run" id="what-we-run">
+        <div className="container">
+          <div className="what-we-run-header rv">
+            <div className="what-we-run-label">
+              <span className="label-line"></span>
+              <span>WHAT WE RUN</span>
+            </div>
+            <h2>From the basics to <em>hands-on practice.</em></h2>
+            <p>The people running these sessions are the same ones who write the reports, so the training reflects how the work is really done.</p>
+          </div>
+          <div className="training-grid rv">
+            {trainingServices.map((service, i) => (
+              <div key={i} className="training-card">
+                <div className="training-card-tag">{service.tag}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
