@@ -3726,12 +3726,12 @@
 
 /* Past Events Gallery - PwC Style */
 .past-events-section {
-  padding: 100px 0;
+  padding: 40px 0 80px;
   background: var(--ink-2);
 }
 .past-events-header {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .past-events-header h2 {
   font-family: 'Newsreader', serif;
