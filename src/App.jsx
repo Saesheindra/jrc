@@ -508,10 +508,11 @@ function App() {
               </div>
               <select name="subject" required>
                 <option value="">Select Subject</option>
-                <option value="IFRS S1 & IFRS S2">IFRS S1 & IFRS S2</option>
-                <option value="Integrated Reporting">Integrated Reporting</option>
-                <option value="ESG Strategy">ESG Strategy</option>
                 <option value="General Inquiry">General Inquiry</option>
+                <option value="Services">Services</option>
+                <option value="Events">Events</option>
+                <option value="Careers">Careers</option>
+                <option value="Others">Others</option>
               </select>
               <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
               <button type="submit" className="btn" style={{ width: '100%', justifyContent: 'center' }}>
