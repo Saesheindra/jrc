@@ -21,23 +21,28 @@ const services = [
   {
     id: 'advisory',
     kicker: 'Strategy to Data.',
-    title: 'Advisory',
-    desc: 'ESG advisory — what matters, the carbon numbers, the targets — all built for the report.',
+    title: 'Guidance & Advisory',
+    desc: 'Strategic and technical support for organisations to understand what matters, measure what counts, and respond with confidence.',
     items: [
-      'ESG strategy & double materiality',
-      'GHG inventory & Climate Value-at-Risk',
-      'KPIs, targets & assurance-readiness'
+      'ESG Strategy',
+      'Double Materiality Assessment',
+      'ESG Risks and Opportunities',
+      'GHG Inventory',
+      'Climate Value-at-Risk',
+      'KPIs & Targets',
+      'Assurance Readiness'
     ]
   },
   {
     id: 'reporting',
     kicker: 'Our Founding Craft.',
     title: 'Report Writing',
-    desc: 'Integrated, annual, sustainability and corporate governance reports for listed companies — many of them award-winning.',
+    desc: 'End-to-end development of integrated, annual, sustainability and corporate governance reports for listed companies.',
     items: [
-      '<IR>, Annual & Sustainability reports',
-      'MCCG & Bursa MMLR / SRG content',
-      'GRI · IFRS · FTSE · SASB aligned'
+      'Integrated, Annual & Sustainability Reports',
+      'MCCG, Bursa MMLR & SRG Disclosures',
+      'GRI, IFRS, SASB & FTSE Alignment',
+      'Content Development & Project Management'
     ]
   }
 ]
