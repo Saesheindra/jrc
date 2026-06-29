@@ -266,7 +266,7 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span>02.</span> <span>JRC</span> / <span className="gold">ADVISORY</span>
+                <span>02.</span> <span>JRC</span> / <span className="gold">GUIDANCE & ADVISORY</span>
               </div>
               <h2>ESG advice that <em>holds up</em> in the report.</h2>
               <p>We help listed companies decide what matters, measure it properly, and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
