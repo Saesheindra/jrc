@@ -17,12 +17,12 @@ const reportingServices = [
     description: 'GRI-, IFRS-, FTSE- and Bursa-aligned sustainability disclosures that are credible and assurance-ready.'
   },
   {
-    title: 'Corporate Governance & MCCG',
-    description: 'CG statements and MCCG alignment that demonstrate genuine governance, not box-ticking.'
+    title: 'Corporate Governance',
+    description: 'Governance statements, policy reviews, board and committee charters, and governance frameworks aligned with best practice, regulatory expectations, and climate-related risks and opportunities.'
   },
   {
-    title: "Chairman's Statement & MD&A",
-    description: 'Leadership narratives and management discussion & analysis that frame performance with clarity and confidence.'
+    title: 'Leadership Communications',
+    description: 'Leadership narratives, including Chairman\'s Statements, CEO Messages and Management Discussion & Analysis, that communicate strategic direction, business performance and the factors driving enterprise value.'
   },
   {
     title: 'Bursa Compliance Content',
