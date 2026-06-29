@@ -83,7 +83,7 @@ function Careers() {
               <div className="nav-dd">
                 <Link to="/expertise">Our Expertise <span className="dd-arrow">▲</span></Link>
                 <div className="nav-dropdown">
-                  <Link to="/expertise#workshop">Workshop & Training</Link>
+                  <Link to="/expertise#workshop">Training</Link>
                   <Link to="/expertise#advisory">Guidance & Advisory</Link>
                   <Link to="/expertise#reporting">Report Writing</Link>
                 </div>
@@ -204,7 +204,7 @@ function Careers() {
             <div>
               <div className="footer-heading">Our Expertise</div>
               <ul className="footer-links">
-                <li><Link to="/expertise#workshop">Workshop & Training</Link></li>
+                <li><Link to="/expertise#workshop">Training</Link></li>
                 <li><Link to="/expertise#advisory">Guidance & Advisory</Link></li>
                 <li><Link to="/expertise#reporting">Report Writing</Link></li>
               </ul>
