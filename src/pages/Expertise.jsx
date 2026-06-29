@@ -76,7 +76,7 @@ const advisoryServices = [
 const trainingServices = [
   {
     tag: 'S1 · S2',
-    title: 'IFRS S1/S2 & Integrated Reporting',
+    title: 'IFRS S1 and IFRS S2 Integrated Reporting',
     description: 'Foundations of the IFRS Sustainability Disclosure Standards and the <IR> framework — governance, strategy, risk and metrics, made practical.'
   },
   {
