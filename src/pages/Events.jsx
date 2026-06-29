@@ -97,32 +97,6 @@ const craClients = [
   'Signature International', 'SkyWorld', 'Taliworks', 'Unitrade', 'VSTECS', 'Zetrix'
 ]
 
-// Training Programs
-const trainingPrograms = [
-  {
-    id: 'cra',
-    number: '01',
-    title: 'IFRS S2 Aligned Climate Risk Assessment',
-    subtitle: 'CRA WORKSHOPS',
-    description: 'Comprehensive climate risk assessment workshops aligned with IFRS S2 requirements, covering physical and transition risk identification, scenario analysis, and financial impact quantification.',
-    clients: craClients.length
-  },
-  {
-    id: 'ifrs',
-    number: '02',
-    title: 'IFRS S1 & Integrated Reporting',
-    subtitle: 'SUSTAINABILITY DISCLOSURE',
-    description: 'Master IFRS S1 sustainability disclosure standards and integrated reporting excellence. Our training programs prepare boards and management teams for the evolving reporting landscape.'
-  },
-  {
-    id: 'esg',
-    number: '03',
-    title: 'ESG Strategy, KPIs & Target Setting',
-    subtitle: 'STRATEGIC ADVISORY',
-    description: 'Comprehensive ESG strategy development, policy design, and KPI frameworks to drive sustainable business performance across environmental, social, and governance dimensions.'
-  }
-]
-
 const eventTypes = ['All', 'Workshops', 'Training', 'Seminars', 'Virtual']
 
 function Events() {
@@ -241,33 +215,6 @@ function Events() {
             <h2>No Upcoming <em>Events</em></h2>
             <p>We're currently preparing our next series of workshops and training sessions. Great things take time — and we're crafting experiences that deliver real value.</p>
             <p className="no-events-cta">Interested in a private workshop or corporate training? <a href="mailto:jr@jr.com.my">Get in touch</a> and let's design something tailored for your team.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Training Programs Overview */}
-      <section className="programs-section">
-        <div className="container">
-          <div className="programs-header rv">
-            <div className="eyebrow">Our Expertise.</div>
-            <h2>Training <em>Programs</em></h2>
-            <p>Comprehensive sustainability and reporting expertise delivered through hands-on workshops and training sessions.</p>
-          </div>
-          <div className="programs-grid">
-            {trainingPrograms.map((program, i) => (
-              <div key={program.id} className="program-card rv" style={{ animationDelay: `${i * 0.15}s` }}>
-                <span className="program-number">{program.number}</span>
-                <div className="program-subtitle">{program.subtitle}</div>
-                <h3>{program.title}</h3>
-                <p>{program.description}</p>
-                {program.clients && (
-                  <div className="program-stat">
-                    <span className="stat-number">{program.clients}+</span>
-                    <span className="stat-label">Clients Trained</span>
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </section>
