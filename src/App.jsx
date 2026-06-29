@@ -270,7 +270,7 @@ function App() {
             </p>
             <div className="cta-row">
               <a href="mailto:jr@jr.com.my" className="btn">Start a conversation</a>
-              <a href="#services" className="btn ghost">Explore our services</a>
+              <Link to="/expertise" className="btn ghost">How We Can Help</Link>
             </div>
             <div className="cred-row">
               <div className="cred">
