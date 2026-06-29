@@ -105,16 +105,24 @@ function Events() {
   const [contactOpen, setContactOpen] = useState(false)
   const [activeFilter, setActiveFilter] = useState('All')
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 60)
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60)
+      setShowScrollTop(window.scrollY > 400)
+    }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -397,6 +405,17 @@ function Events() {
           </div>
         </div>
       )}
+
+      {/* Scroll to Top Button */}
+      <button
+        className={`scroll-to-top ${showScrollTop ? 'visible' : ''}`}
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+      >
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 19V5M5 12l7-7 7 7" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
     </div>
   )
 }
