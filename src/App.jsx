@@ -261,9 +261,9 @@ function App() {
           <div className="inner">
             <div className="eyebrow">Integrated & Sustainability Reporting Specialists.</div>
             <h1>
-              <span className="line"><span>The sustainability guidance and</span></span>
-              <span className="line"><span>advisory partner</span></span>
-              <span className="line"><span><em>trusted</em> by leading listed companies.</span></span>
+              <span className="line"><span>The sustainability guidance &</span></span>
+              <span className="line"><span>advisory partner <em>trusted</em></span></span>
+              <span className="line"><span>by leading listed companies.</span></span>
             </h1>
             <p className="lede">
               For 24 years, we've supported listed companies and government agencies across the region at every stage of the reporting journey—as advisers, trainers, and reporting specialists.
