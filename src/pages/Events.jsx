@@ -226,6 +226,10 @@ function Events() {
             <div className="in-room-label">In the room · 2026</div>
             <h2>Recent <em>sessions.</em></h2>
             <p className="in-room-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
+            <div className="hrd-banner">
+              <span className="hrd-label">HRD CORP CLAIMABLE</span>
+              <span className="hrd-text">Our trainers are HRDC-accredited, so eligible Malaysian employers can claim these programmes against their HRD levy.</span>
+            </div>
             <p className="in-room-hint">— Hover over any photo for details</p>
           </div>
           <div className="sessions-gallery">

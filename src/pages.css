@@ -3641,6 +3641,32 @@
   letter-spacing: 0.05em;
 }
 
+/* HRD Corp Claimable Banner */
+.hrd-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(30, 28, 24, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+  padding: 16px 24px;
+  margin: 24px 0;
+  max-width: 800px;
+}
+.hrd-label {
+  font-family: 'Spline Sans Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+.hrd-text {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.6;
+}
+
 /* Sessions Photo Gallery Grid */
 .sessions-gallery {
   display: grid;
