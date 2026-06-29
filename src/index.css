@@ -580,10 +580,10 @@ body.menu-open { overflow: hidden; }
 .hero h1 {
   font-family: 'Newsreader', serif;
   font-weight: 300;
-  font-size: clamp(46px, 6.8vw, 96px);
-  line-height: 1.02;
+  font-size: clamp(32px, 4.5vw, 64px);
+  line-height: 1.1;
   letter-spacing: -.02em;
-  max-width: 1020px;
+  max-width: 100%;
 }
 .hero h1 .line {
   display: block;
