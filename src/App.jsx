@@ -9,11 +9,13 @@ const services = [
     id: 'training',
     kicker: 'Capability Building.',
     title: 'Training',
-    desc: 'IFRS-licensed workshops for boards, management and the people who handle the data.',
+    desc: 'IFRS-licensed workshops that equip boards, management and reporting teams with the knowledge to meet evolving disclosure requirements.',
     items: [
-      'IFRS S1 & IFRS S2',
-      'Climate Risk Assessment & scenario planning',
-      'Carbon, materiality & board briefings'
+      'IFRS S1 & S2',
+      'Integrated Reporting',
+      'Climate Risk Assessment',
+      'Board Briefings',
+      'Internal Capability Building'
     ]
   },
   {
