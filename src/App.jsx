@@ -11,8 +11,7 @@ const services = [
     title: 'Training',
     desc: 'IFRS-licensed workshops that equip boards, management and reporting teams with the knowledge to meet evolving disclosure requirements.',
     items: [
-      'IFRS S1 & S2',
-      'Integrated Reporting',
+      'IFRS S1 & IFRS S2 & Integrated Reporting',
       'Climate Risk Assessment',
       'Board Briefings',
       'Internal Capability Building'
