@@ -129,7 +129,18 @@ function Expertise() {
 
   useEffect(() => {
     document.title = 'Our Expertise - JRC | Joshua Rayan Communications'
-    window.scrollTo(0, 0)
+    // Handle hash navigation
+    const hash = window.location.hash
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    } else {
+      window.scrollTo(0, 0)
+    }
   }, [])
 
   useEffect(() => {
