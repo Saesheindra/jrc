@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
@@ -126,11 +126,15 @@ function Expertise() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     document.title = 'Our Expertise - JRC | Joshua Rayan Communications'
-    // Handle hash navigation
-    const hash = window.location.hash
+  }, [])
+
+  // Handle hash navigation
+  useEffect(() => {
+    const hash = location.hash
     if (hash) {
       setTimeout(() => {
         const element = document.querySelector(hash)
@@ -141,7 +145,7 @@ function Expertise() {
     } else {
       window.scrollTo(0, 0)
     }
-  }, [])
+  }, [location])
 
   useEffect(() => {
     const handleScroll = () => {
