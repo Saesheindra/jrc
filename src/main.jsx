@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import Expertise from './pages/Expertise.jsx'
-import OurTeam from './pages/OurTeam.jsx'
 import Awards from './pages/Awards.jsx'
 import Blog from './pages/Blog.jsx'
 import Events from './pages/Events.jsx'
@@ -20,7 +19,6 @@ createRoot(document.getElementById('root')).render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/expertise" element={<Expertise />} />
-            <Route path="/our-team" element={<OurTeam />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/events" element={<Events />} />

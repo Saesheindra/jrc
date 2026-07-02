@@ -222,7 +222,6 @@ function App() {
                   <Link to="/expertise#reporting">Report Writing</Link>
                 </div>
               </div>
-              <Link to="/our-team">Our Team</Link>
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
@@ -248,7 +247,6 @@ function App() {
         <nav>
           <a href="#about" onClick={() => setMobileMenuOpen(false)}>About JRC</a>
           <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
-          <Link to="/our-team" onClick={() => setMobileMenuOpen(false)}>Our Team</Link>
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
@@ -444,7 +442,6 @@ function App() {
               <ul className="footer-links">
                 <li><Link to="/">About JRC</Link></li>
                 <li><Link to="/expertise">Our Expertise</Link></li>
-                <li><Link to="/our-team">Our Team</Link></li>
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
