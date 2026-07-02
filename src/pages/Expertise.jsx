@@ -128,6 +128,7 @@ function Expertise() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
+    document.title = 'Our Expertise - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 

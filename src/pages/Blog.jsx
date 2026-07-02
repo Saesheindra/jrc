@@ -74,6 +74,7 @@ function Blog() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
+    document.title = 'Blog - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 

@@ -150,6 +150,11 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const heroRef = useRef(null)
 
+  // Set page title
+  useEffect(() => {
+    document.title = 'JRC - Joshua Rayan Communications | ESG & Sustainability Advisory'
+  }, [])
+
   // Scroll handling
   useEffect(() => {
     const handleScroll = () => {
