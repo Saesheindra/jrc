@@ -8,6 +8,7 @@ import Awards from './pages/Awards.jsx'
 import Blog from './pages/Blog.jsx'
 import Events from './pages/Events.jsx'
 import Careers from './pages/Careers.jsx'
+import Podcasts from './pages/Podcasts.jsx'
 import ErrorBoundary from './components/ErrorBoundary.jsx'
 import Layout from './components/Layout.jsx'
 
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/awards" element={<Awards />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/podcasts" element={<Podcasts />} />
             <Route path="/careers" element={<Careers />} />
           </Routes>
         </Layout>

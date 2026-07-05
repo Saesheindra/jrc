@@ -146,6 +146,7 @@ function App() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
+              <Link to="/podcasts">Podcasts</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -170,6 +171,7 @@ function App() {
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcasts</Link>
           <Link to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
         </nav>
         <div className="m-contact">
@@ -365,6 +367,7 @@ function App() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/podcasts">Podcasts</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

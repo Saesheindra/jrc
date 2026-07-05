@@ -3,55 +3,22 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
-// Past Events / Workshop Gallery
-const pastWorkshops = [
-  { name: 'Zetrix AI Berhad', image: '/assets/ifrs/Zetrix MYEG Berhad.png', type: 'IFRS S1 Workshop' },
-  { name: 'Matrix Concepts Holdings Berhad', image: '/assets/ifrs/Matrix Concepts Holdings Berhad.png', type: 'Climate Risk Assessment' },
-  { name: 'Hengyuan Refining', image: '/assets/ifrs/Hengyuan Refining.png', type: 'IFRS S2 Training' },
-  { name: 'LBS Bina Group Berhad', image: '/assets/ifrs/LBS Bina Group Berhad.png', type: 'ESG Strategy' },
-  { name: 'Mah Sing Berhad', image: '/assets/ifrs/Mah Sing Berhad.png', type: 'Integrated Reporting' },
-  { name: 'Sunway Construction Group Berhad', image: '/assets/ifrs/Sunway Construction Group Berhad.png', type: 'IFRS S1 Workshop' },
-  { name: 'IOI Properties Group Berhad', image: '/assets/ifrs/IOI Properties Group Berhad.png', type: 'Climate Scenario Analysis' },
-  { name: 'KPS Berhad', image: '/assets/ifrs/KPS Berhad.png', type: 'ESG KPIs Training' }
+const podcasts = [
+  {
+    title: 'Coming Soon: ESG Conversations',
+    description: 'We\'re preparing a new podcast series featuring conversations with sustainability leaders, ESG practitioners, and climate experts across the region.',
+    status: 'upcoming'
+  }
 ]
 
-// Recent Workshop Sessions 2026
-const recentSessions = [
-  { image: '/assets/sessions/t01-mah-sing-ifrs.jpg', title: 'IFRS S1 & S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
-  { image: '/assets/sessions/t02-mah-sing-ifrs.jpg', title: 'Walking the room through the standards', company: 'Mah Sing', date: 'Jan 2026' },
-  { image: '/assets/sessions/t03-ame-cra.jpg', title: 'Facilitating a Climate Risk Assessment', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/sessions/t04-ame-cra.jpg', title: 'Hands-on scenario exercise', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/sessions/t05-ame-cra.jpg', title: 'The workshop cohort', company: 'AME', date: 'Apr 2026' },
-  { image: '/assets/sessions/t06-skyworld.jpg', title: 'ESG training in session', company: 'SkyWorld', date: 'Feb 2026' },
-  { image: '/assets/sessions/t07-skyworld.jpg', title: 'A full house for ESG training', company: 'SkyWorld', date: 'Feb 2026' },
-  { image: '/assets/sessions/t08-ranhill-saj.jpg', title: 'Leading the room', company: 'Ranhill SAJ', date: 'Mar 2026' },
-  { image: '/assets/sessions/t09-ranhill-saj.jpg', title: 'Table-by-table climate risk work', company: 'Ranhill SAJ', date: 'Mar 2026' },
-  { image: '/assets/sessions/t10-ranhill-power.jpg', title: 'Climate Risk Assessment briefing', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/sessions/t11-ranhill-power.jpg', title: 'Working through the scenarios', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/sessions/t12-ranhill-power.jpg', title: 'The Ranhill Power cohort', company: 'Ranhill Power', date: 'Mar 2026' },
-  { image: '/assets/sessions/t13-land-general.jpg', title: 'Climate Risk Assessment workshop', company: 'Land & General', date: 'Jan 2026' },
-  { image: '/assets/sessions/t14-land-general.jpg', title: 'Hands-on breakout', company: 'Land & General', date: 'Jan 2026' },
-  { image: '/assets/sessions/t15-hli-cra.jpg', title: 'Climate Risk Assessment, full cohort', company: 'Hong Leong', date: 'Apr 2026' },
-  { image: '/assets/sessions/t16-hli-cra.jpg', title: 'Breakout groups at work', company: 'Hong Leong', date: 'Apr 2026' },
-  { image: '/assets/sessions/t17-hli-cvar.jpg', title: 'Climate Value-at-Risk workshop', company: 'Hong Leong', date: 'May 2026' },
-  { image: '/assets/sessions/t18-hli-cvar.jpg', title: 'The Climate VaR cohort', company: 'Hong Leong', date: 'May 2026' },
-  { image: '/assets/sessions/t19-apollo-dma.jpg', title: 'Double Materiality Assessment session', company: 'Apollo', date: 'Apr 2026' },
-  { image: '/assets/sessions/t20-apollo-dma.jpg', title: 'Working the materiality matrix', company: 'Apollo', date: 'Apr 2026' },
-  { image: '/assets/sessions/t21-hcib.jpg', title: 'Reporting briefing', company: 'HCIB', date: 'Apr 2026' },
-  { image: '/assets/sessions/t22-hcib.jpg', title: 'Heads-down working session', company: 'HCIB', date: 'Apr 2026' },
-  { image: '/assets/sessions/t23-apollo-site.jpg', title: 'On-site operations walkthrough', company: 'Apollo', date: 'Mar 2026' },
-  { image: '/assets/sessions/t24-berjaya.jpg', title: 'One-to-one facilitation', company: 'Berjaya', date: 'Apr 2026' },
-  { image: '/assets/sessions/t25-berjaya.jpg', title: 'The engagement cohort', company: 'Berjaya', date: 'Apr 2026' }
-]
-
-function Events() {
+function Podcasts() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
-    document.title = 'Events - JRC | Joshua Rayan Communications'
+    document.title = 'Podcasts - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 
@@ -85,11 +52,10 @@ function Events() {
   }, [])
 
   return (
-    <div className="page-events-big4">
+    <div className="page-podcasts">
       <div className="grain" aria-hidden="true"></div>
       <div className="rules" aria-hidden="true"></div>
 
-      {/* Header */}
       <header className={scrolled ? 'scrolled' : ''}>
         <div className="container">
           <div className="nav-wrap">
@@ -107,9 +73,9 @@ function Events() {
                 </div>
               </div>
               <Link to="/awards">Awards & Recognitions</Link>
-              <Link to="/events" className="active">Events</Link>
+              <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts" className="active">Podcasts</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -120,7 +86,6 @@ function Events() {
         </div>
       </header>
 
-      {/* Mobile Menu */}
       <div className={`m-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <nav>
           <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
@@ -132,109 +97,92 @@ function Events() {
         </nav>
       </div>
 
-      {/* Hero Section - Big 4 Style */}
-      <section className="events-hero">
+      <section className="page-hero">
         <div className="container">
-          <div className="events-hero-content">
-            <div className="eyebrow">Events.</div>
-            <h1>Workshops, Webcasts & <em>Collaboration.</em></h1>
-            <p>Building capacity for better disclosure through hands-on training, expert-led workshops, and thought leadership sessions on sustainability reporting.</p>
-          </div>
-        </div>
-        <div className="hero-accent"></div>
-      </section>
-
-      {/* No Upcoming Events */}
-      <section className="no-events-section">
-        <div className="container">
-          <div className="no-events-content rv">
-            <h2>No Upcoming <em>Events</em></h2>
-            <p>We're currently preparing our next series of workshops and training sessions. Great things take time — and we're crafting experiences that deliver real value.</p>
-            <p className="no-events-cta">Interested in a private workshop or corporate training? <a href="mailto:jr@jr.com.my">Get in touch</a> and let's design something tailored for your team.</p>
-          </div>
+          <div className="eyebrow">Podcasts.</div>
+          <h1>Conversations on <em>sustainability.</em></h1>
+          <p>Listen to expert discussions on ESG strategy, climate disclosure, integrated reporting, and the future of sustainable business.</p>
         </div>
       </section>
 
-      {/* In the Room 2026 - Recent Sessions Photo Gallery */}
-      <section className="in-room-section">
+      {/* Coming Soon Section */}
+      <section className="podcasts-section">
         <div className="container">
-          <div className="in-room-header rv">
-            <div className="in-room-label">In the room · 2026</div>
-            <h2>Recent <em>sessions.</em></h2>
-            <p className="in-room-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
-            <div className="hrd-banner">
-              <span className="hrd-label">HRD CORP CLAIMABLE</span>
-              <span className="hrd-text">Our trainers are HRDC-accredited, so eligible Malaysian employers can claim these programmes against their HRD levy.</span>
-            </div>
-            <p className="in-room-hint">— Hover over any photo for details</p>
-          </div>
-          <div className="sessions-gallery">
-            {recentSessions.map((session, i) => (
-              <figure key={i} className="session-photo rv" style={{ animationDelay: `${i * 0.05}s` }}>
-                <img src={session.image} alt={session.title} loading="lazy" />
-                <figcaption className="session-overlay">
-                  <span className="session-title">{session.title}</span>
-                  <span className="session-meta">{session.company} · {session.date}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Past Events Gallery - PwC Style */}
-      <section className="past-events-section">
-        <div className="container">
-          <div className="past-events-header rv">
-            <div className="eyebrow">What We've Done.</div>
-            <h2>Past <em>Workshops</em></h2>
-          </div>
-          <div className="past-events-grid">
-            {pastWorkshops.map((workshop, i) => (
-              <div key={i} className="past-event-card rv" style={{ animationDelay: `${i * 0.08}s` }}>
-                <div className="past-event-image">
-                  <img src={workshop.image} alt={workshop.name} loading="lazy" />
-                </div>
-                <h4>{workshop.name}</h4>
-                <span className="workshop-type-label">{workshop.type}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Let's Collaborate - PwC Style */}
-      <section className="collaborate-section">
-        <div className="container">
-          <div className="collaborate-content rv">
-            <h2>Let's <em>Collaborate</em></h2>
-            <p>We believe the best outcomes happen when bold ideas come together. Looking for customised training for your organisation?</p>
-            <div className="collaborate-actions">
-              <a href="mailto:jr@jr.com.my" className="collab-btn primary">Get In Touch</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stay Updated Section */}
-      <section className="stay-updated-section">
-        <div className="container">
-          <div className="stay-updated-content rv">
-            <div>
-              <h3>Stay Updated</h3>
-              <p>Get notified about upcoming workshops, webinars, and sustainability insights.</p>
-            </div>
-            <a href="mailto:jr@jr.com.my?subject=Subscribe to JRC Events" className="subscribe-btn">
-              Subscribe to Updates
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+          <div className="podcasts-coming-soon rv">
+            <div className="podcast-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                <line x1="12" y1="19" x2="12" y2="23"/>
+                <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
+            </div>
+            <h2>Coming <em>Soon</em></h2>
+            <p>We're preparing a new podcast series featuring conversations with sustainability leaders, ESG practitioners, and climate experts across the region.</p>
+            <p className="podcast-subtitle">Stay tuned for episodes on IFRS S1 & S2 implementation, climate risk management, and the future of corporate sustainability disclosure.</p>
+            <a href="mailto:jr@jr.com.my?subject=Podcast Updates - JRC" className="btn">
+              Get Notified When We Launch
             </a>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
+      {/* What to Expect Section */}
+      <section className="podcast-preview-section">
+        <div className="container">
+          <div className="sec-head rv">
+            <div className="eyebrow">What to Expect.</div>
+            <h2>Topics we'll <em>explore</em></h2>
+          </div>
+          <div className="podcast-topics-grid rv">
+            <div className="podcast-topic">
+              <div className="topic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                  <path d="M2 17l10 5 10-5"/>
+                  <path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3>IFRS S1 & S2</h3>
+              <p>Deep dives into sustainability disclosure standards and implementation strategies</p>
+            </div>
+            <div className="podcast-topic">
+              <div className="topic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <h3>Climate Risk</h3>
+              <p>Expert perspectives on climate scenario analysis and risk assessment</p>
+            </div>
+            <div className="podcast-topic">
+              <div className="topic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3>Leadership Insights</h3>
+              <p>Conversations with sustainability leaders from leading listed companies</p>
+            </div>
+            <div className="podcast-topic">
+              <div className="topic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <h3>ESG Strategy</h3>
+              <p>Practical guidance on building effective sustainability programmes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div className="container">
           <div className="footer-grid">
@@ -283,7 +231,7 @@ function Events() {
             </div>
           </div>
           <div className="footer-bottom">
-            <div>&copy; 2026 Joshua Rayan Communications. All rights reserved.</div>
+            <div>© 2026 Joshua Rayan Communications. All rights reserved.</div>
           </div>
         </div>
       </footer>
@@ -321,6 +269,7 @@ function Events() {
                 <option value="General Inquiry">General Inquiry</option>
                 <option value="Services">Services</option>
                 <option value="Events">Events</option>
+                <option value="Podcasts">Podcasts</option>
                 <option value="Careers">Careers</option>
                 <option value="Others">Others</option>
               </select>
@@ -347,4 +296,4 @@ function Events() {
   )
 }
 
-export default Events
+export default Podcasts
