@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './index.css'
 import ClientGlobe from './ClientGlobe'
 
-// Data
+// Data - JRC Services
 const services = [
   {
     id: 'training',
