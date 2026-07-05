@@ -1,29 +1,11 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef, useCallback } from 'react'
 
 function AnimatedCounter({ end, duration = 2000, suffix = '', prefix = '' }) {
   const [count, setCount] = useState(0)
   const [hasAnimated, setHasAnimated] = useState(false)
   const ref = useRef(null)
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true)
-          animateCount()
-        }
-      },
-      { threshold: 0.3 }
-    )
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
-    return () => observer.disconnect()
-  }, [hasAnimated])
-
-  const animateCount = () => {
+  const animateCount = useCallback(() => {
     const startTime = Date.now()
     const endValue = parseInt(end)
 
@@ -42,7 +24,25 @@ function AnimatedCounter({ end, duration = 2000, suffix = '', prefix = '' }) {
     }
 
     requestAnimationFrame(animate)
-  }
+  }, [end, duration])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true)
+          animateCount()
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+
+    return () => observer.disconnect()
+  }, [hasAnimated, animateCount])
 
   return (
     <span ref={ref}>

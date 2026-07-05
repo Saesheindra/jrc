@@ -88,7 +88,6 @@ function Careers() {
               <span className="brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
             </Link>
             <nav className="links">
-              <Link to="/">About JRC</Link>
               <div className="nav-dd">
                 <Link to="/expertise">Our Expertise <span className="dd-arrow">▲</span></Link>
                 <div className="nav-dropdown">
@@ -112,7 +111,6 @@ function Careers() {
 
       <div className={`m-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <nav>
-          <Link to="/" onClick={() => setMobileMenuOpen(false)}>About JRC</Link>
           <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
@@ -199,7 +197,7 @@ function Careers() {
             <div>
               <div className="footer-heading">Quick Links</div>
               <ul className="footer-links">
-                <li><Link to="/">About JRC</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/expertise">Our Expertise</Link></li>
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>

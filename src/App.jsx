@@ -57,90 +57,7 @@ const frameworks = [
   { category: 'Capital Markets', name: 'Bursa SRG', desc: 'Bursa Malaysia SRG (3rd Edition) & MMLR' }
 ]
 
-const awards = [
-  {
-    org: 'NACRA',
-    year: '2022 — 2023',
-    name: 'National Annual Corporate Report Awards',
-    medals: [{ label: 'Platinum ×2', type: 'platinum' }, { label: 'Gold', type: 'gold' }],
-    logo: '/assets/awards/logos/nacra-logo.png'
-  },
-  {
-    org: 'The Edge',
-    year: '2023',
-    name: 'The Edge ESG Awards',
-    medals: [{ label: 'Gold ×3', type: 'gold' }, { label: 'Silver ×3', type: 'silver' }],
-    logo: '/assets/awards/logos/esg-logo.png'
-  },
-  {
-    org: 'ARA',
-    year: '2023 — 2025',
-    name: 'Australasian Reporting Awards',
-    medals: [{ label: 'Silver ×3', type: 'silver' }, { label: 'Bronze ×2', type: 'bronze' }],
-    logo: '/assets/awards/logos/ara-logo.png'
-  },
-  {
-    org: 'ASRA',
-    year: '2024 / 2025',
-    name: 'Asia Sustainability Reporting Awards',
-    medals: [{ label: 'Platinum', type: 'platinum' }],
-    logo: '/assets/awards/logos/asra-logo.png'
-  }
-]
-
-const clients = [
-  { name: 'Mah Sing', logo: '/assets/logos/Mah Sing.png' },
-  { name: 'MMC Corporation', logo: '/assets/logos/MMC Corp.png' },
-  { name: 'BAT Malaysia', logo: '/assets/logos/BATM.png' },
-  { name: 'Berjaya', logo: '/assets/logos/berjaya.jpg' },
-  { name: 'SkyWorld', logo: '/assets/logos/SkyWorld.png' },
-  { name: 'Paramount', logo: '/assets/logos/Paramount Corporation.png' },
-  { name: 'LBS Bina', logo: '/assets/logos/LBS Bina.png' },
-  { name: 'Protasco', logo: '/assets/logos/Protasco.png' },
-  { name: 'Ajiya', logo: '/assets/logos/Ajiya.png' },
-  { name: 'Ancom Nylex', logo: '/assets/logos/ancom-nylex.webp' },
-  { name: 'JAKS Resources', logo: '/assets/logos/JAKS Resources.png' },
-  { name: 'Kimlun', logo: '/assets/logos/kimlun.webp' },
-  { name: 'Hume Cement', logo: '/assets/logos/hume-cement.png' },
-  { name: 'KPS Berhad', logo: '/assets/logos/KPS Berhad.png' },
-  { name: 'Ann Joo', logo: '/assets/logos/Ann Joo.png' },
-  { name: 'Ayer Holdings', logo: '/assets/logos/Ayer.png' },
-  { name: 'Hengyuan', logo: '/assets/logos/Hengyuan Refining Company.png' },
-  { name: 'Innoprise', logo: '/assets/logos/Innoprise Plantations.png' },
-  { name: 'Muda Holdings', logo: '/assets/logos/Muda Holdings.png' },
-  { name: 'Signature Intl', logo: '/assets/logos/Signature International.png' },
-  { name: 'Taliworks', logo: '/assets/logos/Taliworks.png' },
-  { name: 'VSTECS', logo: '/assets/logos/VSTECS.png' },
-  { name: 'Zetrix', logo: '/assets/logos/Zetrix.png' },
-  { name: 'Apollo', logo: '/assets/logos/apollo.png' }
-]
-
-const team = [
-  {
-    name: 'Joshua Rayan',
-    role: 'Founder & Principal Consultant',
-    bio: 'Founder of JRC and an ESG consultant to large and mid-cap public listed companies. A certified GRI Sustainability Reporting Specialist and IIRC-certified <IR> Practitioner.',
-    image: '/assets/team/joshua.jpg'
-  },
-  {
-    name: 'Ng Tse Mei',
-    role: 'Corporate Reporting & Sustainability',
-    bio: 'A corporate report writer and sustainability consultant with a portfolio of 120+ corporate reports for listed companies and government agencies.',
-    image: '/assets/team/tsemei.jpg'
-  },
-  {
-    name: 'Jordan Raj',
-    role: 'Reporting & Sustainability Consultant',
-    bio: 'A specialist in corporate and sustainability reporting working across GRI, SASB, IFRS S1 & S2, FTSE4Good and Bursa Malaysia frameworks.',
-    image: '/assets/team/jordan.jpg'
-  },
-  {
-    name: 'Liz Chai',
-    role: 'Climate Risk & Sustainability',
-    bio: 'GARP-certified Sustainability & Climate Risk (SCR) professional specialising in physical and transition climate-risk assessment.',
-    image: '/assets/team/liz.jpg'
-  }
-]
+// Data arrays moved to dedicated pages
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -218,7 +135,6 @@ function App() {
               <span className="brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
             </Link>
             <nav className="links">
-              <a href="#about">About JRC</a>
               <div className="nav-dd">
                 <Link to="/expertise">Our Expertise <span className="dd-arrow">▲</span></Link>
                 <div className="nav-dropdown">
@@ -250,7 +166,6 @@ function App() {
       {/* Mobile Menu */}
       <div className={`m-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <nav>
-          <a href="#about" onClick={() => setMobileMenuOpen(false)}>About JRC</a>
           <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
@@ -445,7 +360,7 @@ function App() {
             <div>
               <div className="footer-heading">Quick Links</div>
               <ul className="footer-links">
-                <li><Link to="/">About JRC</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/expertise">Our Expertise</Link></li>
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>

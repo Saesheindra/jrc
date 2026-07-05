@@ -26,7 +26,7 @@ export default function ClientGlobe() {
         antialias: true,
         alpha: true
       })
-    } catch (e) {
+    } catch {
       setFallback(true)
       return
     }
@@ -64,7 +64,7 @@ export default function ClientGlobe() {
       const rad = Math.sqrt(1 - y * y)
       const th = GA * i
 
-      const tex = loader.load(uri, (texture) => {
+      const tex = loader.load(uri, () => {
         // Make all logos fill a uniform square size
         // This ensures all logos appear at consistent size on the globe
         const uniformSize = 0.72

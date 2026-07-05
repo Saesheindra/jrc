@@ -3,50 +3,6 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
-// Upcoming Events Data
-const upcomingEvents = [
-  {
-    id: 1,
-    date: { day: '15', month: 'Mar', year: '2026' },
-    title: 'IFRS S1 & S2 Implementation Workshop',
-    description: 'Comprehensive workshop on ISSB sustainability disclosure standards for listed companies. Learn practical approaches to climate risk assessment and scenario analysis.',
-    type: 'Workshop',
-    location: 'Kuala Lumpur',
-    time: '9:00 AM - 5:00 PM',
-    featured: true
-  },
-  {
-    id: 2,
-    date: { day: '22', month: 'Feb', year: '2026' },
-    title: 'Climate Scenario Analysis Masterclass',
-    description: 'Deep-dive into NGFS and SSP scenarios for climate risk assessment and disclosure.',
-    type: 'Training',
-    location: 'Virtual',
-    time: '2:00 PM - 4:00 PM',
-    featured: false
-  },
-  {
-    id: 3,
-    date: { day: '10', month: 'Jan', year: '2026' },
-    title: 'ESG Strategy Development Seminar',
-    description: 'Best practices in developing company-wide ESG strategies aligned with global frameworks.',
-    type: 'Seminar',
-    location: 'Kuala Lumpur',
-    time: '9:00 AM - 1:00 PM',
-    featured: false
-  },
-  {
-    id: 4,
-    date: { day: '05', month: 'Dec', year: '2025' },
-    title: 'TCFD Reporting Workshop',
-    description: 'Practical guidance on Task Force on Climate-related Financial Disclosures.',
-    type: 'Workshop',
-    location: 'Virtual',
-    time: '10:00 AM - 12:00 PM',
-    featured: false
-  }
-]
-
 // Past Events / Workshop Gallery
 const pastWorkshops = [
   { name: 'Zetrix AI Berhad', image: '/assets/ifrs/Zetrix MYEG Berhad.png', type: 'IFRS S1 Workshop' },
@@ -88,23 +44,10 @@ const recentSessions = [
   { image: '/assets/sessions/t25-berjaya.jpg', title: 'The engagement cohort', company: 'Berjaya', date: 'Apr 2026' }
 ]
 
-// CRA Clients
-const craClients = [
-  'Ajiya', 'Ann Joo', 'ANRB', 'Ayer', 'BATM', 'Berjaya Langkawi Resort',
-  'CHGB', 'CHGP', 'Hengyuan Refining Company', 'Innoprise Plantations',
-  'JAKS Resources', 'KPS Berhad', 'LBS Bina', 'Mah Sing', 'MMC Corp',
-  'Muda Holdings', 'Paramount Corporation', 'Protasco', 'SAMEE',
-  'Signature International', 'SkyWorld', 'Taliworks', 'Unitrade', 'VSTECS', 'Zetrix'
-]
-
-const eventTypes = ['All', 'Workshops', 'Training', 'Seminars', 'Virtual']
-
 function Events() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
-  const [activeFilter, setActiveFilter] = useState('All')
-  const [currentSlide, setCurrentSlide] = useState(0)
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
@@ -141,20 +84,6 @@ function Events() {
     return () => observer.disconnect()
   }, [])
 
-  // Auto-slide for CRA clients
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % craClients.length)
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
-
-  const filteredEvents = activeFilter === 'All'
-    ? upcomingEvents
-    : upcomingEvents.filter(e => e.type === activeFilter || (activeFilter === 'Virtual' && e.location === 'Virtual'))
-
-  const featuredEvent = upcomingEvents.find(e => e.featured)
-
   return (
     <div className="page-events-big4">
       <div className="grain" aria-hidden="true"></div>
@@ -169,7 +98,6 @@ function Events() {
               <span className="brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
             </Link>
             <nav className="links">
-              <Link to="/">About JRC</Link>
               <div className="nav-dd">
                 <Link to="/expertise">Our Expertise <span className="dd-arrow">▲</span></Link>
                 <div className="nav-dropdown">
@@ -194,7 +122,6 @@ function Events() {
       {/* Mobile Menu */}
       <div className={`m-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <nav>
-          <Link to="/" onClick={() => setMobileMenuOpen(false)}>About JRC</Link>
           <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
@@ -320,7 +247,7 @@ function Events() {
             <div>
               <div className="footer-heading">Quick Links</div>
               <ul className="footer-links">
-                <li><Link to="/">About JRC</Link></li>
+                <li><Link to="/">Home</Link></li>
                 <li><Link to="/expertise">Our Expertise</Link></li>
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>

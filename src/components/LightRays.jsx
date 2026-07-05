@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import './LightRays.css'
 
 export default function LightRays({
-  raysOrigin = 'top-center',
   raysColor = '#fdfcfc',
   raysSpeed = 1,
   lightSpread = 0.7,
@@ -11,9 +10,7 @@ export default function LightRays({
   fadeDistance = 1,
   saturation = 1,
   followMouse = false,
-  mouseInfluence = 0.1,
-  noiseAmount = 0,
-  distortion = 0
+  mouseInfluence = 0.1
 }) {
   const containerRef = useRef(null)
   const [mousePos, setMousePos] = useState({ x: 0.5, y: 0 })
@@ -53,7 +50,8 @@ export default function LightRays({
     const angle = -spread + (spread * 2 * i) / 11
     const length = rayLength * 100
     const delay = i * 0.15
-    const opacity = 0.15 + Math.random() * 0.1
+    // Deterministic opacity variation based on index
+    const opacity = 0.15 + ((i % 5) * 0.02)
 
     return (
       <div
