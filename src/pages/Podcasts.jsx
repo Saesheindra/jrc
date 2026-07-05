@@ -116,11 +116,17 @@ function Podcasts() {
 
       {/* Featured Podcast Section - BFM Style */}
       <section className="podcast-bfm-section">
-        <div className="container">
-          <div className="podcast-bfm-card rv">
-            {/* Show Name */}
-            <div className="podcast-bfm-show">{featuredPodcast.show}</div>
+        {/* Full-width Hero Image */}
+        <div className="podcast-bfm-hero rv">
+          <img src={featuredPodcast.image} alt={featuredPodcast.title} />
+          <div className="podcast-bfm-hero-overlay">
+            <div className="podcast-bfm-show-badge">{featuredPodcast.show}</div>
+          </div>
+        </div>
 
+        {/* Content Below Image */}
+        <div className="container">
+          <div className="podcast-bfm-content rv">
             {/* Title */}
             <h2 className="podcast-bfm-title">{featuredPodcast.title}</h2>
 
@@ -131,11 +137,6 @@ function Podcasts() {
               <span className="podcast-bfm-date">{featuredPodcast.date}</span>
               <span className="podcast-bfm-divider">•</span>
               <span className="podcast-bfm-duration">{featuredPodcast.duration}</span>
-            </div>
-
-            {/* Image */}
-            <div className="podcast-bfm-image">
-              <img src={featuredPodcast.image} alt={featuredPodcast.title} />
             </div>
 
             {/* Description */}
