@@ -359,7 +359,7 @@ function Expertise() {
       <section className="contact-section">
         <div className="container rv">
           <div className="eyebrow" style={{ justifyContent: 'center' }}>Get Started.</div>
-          <h2>Ready to elevate <em>your reporting?</em></h2>
+          <h2>Ready to elevate <em>your next report</em> or looking for guidance and advisory on your <em>ESG journey?</em></h2>
           <p>Let's discuss how we can support your sustainability journey.</p>
           <a className="email" href="mailto:jr@jr.com.my">jr@jr.com.my</a>
         </div>
