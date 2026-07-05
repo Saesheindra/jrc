@@ -6,7 +6,11 @@ import '../pages.css'
 const featuredPodcast = {
   title: 'The ESG Firm That Was 15 Years Early, Then Right On Time',
   show: 'Open For Business',
-  description: 'Joshua Rayan, CEO of Joshua Rayan Communications, discusses how JRC became a vanguard in sustainability advisory — established in 2007, long before ESG became a boardroom mandate. The conversation covers their unique approach where senior leaders remain actively involved in client projects, their near 100% client closure rate, and their ambitious five-year roadmap.',
+  description: [
+    'ESG guidance and advisory firm Joshua Rayan Communications (JRC) was established in 2007 with one clear conviction: that sustainability reporting should be done properly, personally, and affordably. Today, the bootstrapped, seven-figure firm boasts a near 100% client closure rate and serves corporate giants like Sunway, BAT, Ranhill, and MMC across Malaysia, Singapore, and Indonesia.',
+    'Rather than treating ESG as a simple box-ticking reporting exercise, JRC provides end-to-end advisory. Using a unique "vanguard system" where senior leaders remain actively involved in project execution, they help clients identify critical data gaps long before a final report is drafted.',
+    'Founder and CEO Joshua Rayan joins us to unpack the business of sustainability reporting in a highly competitive market. We discuss running a 20-person consultancy with a "no-boss" culture, why homegrown ESG practitioners want to be more actively engaged in national policy and standard-setting rooms, and the firm\'s ambitious five-year roadmap toward an IPO.'
+  ],
   guest: 'Joshua Rayan',
   guestTitle: 'CEO, Joshua Rayan Communications',
   duration: '29 min',
@@ -136,7 +140,9 @@ function Podcasts() {
 
             {/* Description */}
             <div className="podcast-bfm-description">
-              <p>{featuredPodcast.description}</p>
+              {featuredPodcast.description.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
             </div>
 
             {/* Listen Button */}

@@ -4092,9 +4092,14 @@
 }
 
 .podcast-bfm-description p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.8;
   color: #333;
+  margin-bottom: 20px;
+}
+
+.podcast-bfm-description p:last-child {
+  margin-bottom: 0;
 }
 
 .podcast-bfm-listen {
