@@ -209,7 +209,6 @@ function Events() {
             <p>We believe the best outcomes happen when bold ideas come together. Looking for customised training for your organisation?</p>
             <div className="collaborate-actions">
               <a href="mailto:jr@jr.com.my" className="collab-btn primary">Get In Touch</a>
-              <Link to="/#contact" className="collab-btn secondary">View Contact Details</Link>
             </div>
           </div>
         </div>
