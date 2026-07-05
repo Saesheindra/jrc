@@ -7,23 +7,14 @@ const featuredPodcast = {
   title: 'The ESG Firm That Was 15 Years Early, Then Right On Time',
   show: 'Open For Business',
   description: 'Joshua Rayan, CEO of Joshua Rayan Communications, discusses how JRC became a vanguard in sustainability advisory — established in 2007, long before ESG became a boardroom mandate. The conversation covers their unique approach where senior leaders remain actively involved in client projects, their near 100% client closure rate, and their ambitious five-year roadmap.',
-  host: 'Audrey Raj',
   guest: 'Joshua Rayan',
   guestTitle: 'CEO, Joshua Rayan Communications',
   duration: '29 min',
-  date: 'May 19, 2026',
+  date: '19 May 2026',
   image: 'https://bfmcms.s3.ap-southeast-1.amazonaws.com/websiteimages/open-for-business/2026-05-19_the-esg-firm-that-was-15-years-early-then-right-on-time-time/website_e4ada47d-e2c7-43a2-acfe-97f1291fe65c.png',
   link: 'https://www.bfm.my/content/podcast/the-esg-firm-that-was-15-years-early-then-right-on-time',
   platform: 'BFM 89.9'
 }
-
-const podcastTopics = [
-  'The "vanguard system" — senior leaders on every engagement',
-  'Building a bootstrapped consultancy with a flat structure',
-  'Near 100% client closure rate and what drives it',
-  'The five-year roadmap toward IPO',
-  'ESG practitioners and national policy development'
-]
 
 function Podcasts() {
   const [scrolled, setScrolled] = useState(false)
@@ -119,72 +110,47 @@ function Podcasts() {
         </div>
       </section>
 
-      {/* Featured Podcast Section */}
-      <section className="podcast-featured-section">
+      {/* Featured Podcast Section - BFM Style */}
+      <section className="podcast-bfm-section">
         <div className="container">
-          <div className="podcast-featured rv">
-            <div className="podcast-featured-image">
+          <div className="podcast-bfm-card rv">
+            {/* Show Name */}
+            <div className="podcast-bfm-show">{featuredPodcast.show}</div>
+
+            {/* Title */}
+            <h2 className="podcast-bfm-title">{featuredPodcast.title}</h2>
+
+            {/* Meta: Guest & Date */}
+            <div className="podcast-bfm-meta">
+              <span className="podcast-bfm-guest">{featuredPodcast.guest}, {featuredPodcast.guestTitle}</span>
+              <span className="podcast-bfm-divider">•</span>
+              <span className="podcast-bfm-date">{featuredPodcast.date}</span>
+              <span className="podcast-bfm-divider">•</span>
+              <span className="podcast-bfm-duration">{featuredPodcast.duration}</span>
+            </div>
+
+            {/* Image */}
+            <div className="podcast-bfm-image">
               <img src={featuredPodcast.image} alt={featuredPodcast.title} />
-              <div className="podcast-platform-badge">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
-                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                  <line x1="12" y1="19" x2="12" y2="23"/>
-                  <line x1="8" y1="23" x2="16" y2="23"/>
-                </svg>
-                {featuredPodcast.platform}
-              </div>
             </div>
-            <div className="podcast-featured-content">
-              <div className="podcast-show-name">{featuredPodcast.show}</div>
-              <h2>{featuredPodcast.title}</h2>
-              <p className="podcast-description">{featuredPodcast.description}</p>
 
-              <div className="podcast-meta">
-                <div className="podcast-people">
-                  <div className="podcast-person">
-                    <span className="person-role">Host</span>
-                    <span className="person-name">{featuredPodcast.host}</span>
-                  </div>
-                  <div className="podcast-person">
-                    <span className="person-role">Guest</span>
-                    <span className="person-name">{featuredPodcast.guest}</span>
-                    <span className="person-title">{featuredPodcast.guestTitle}</span>
-                  </div>
-                </div>
-                <div className="podcast-info">
-                  <span className="podcast-duration">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <circle cx="12" cy="12" r="10"/>
-                      <path d="M12 6v6l4 2"/>
-                    </svg>
-                    {featuredPodcast.duration}
-                  </span>
-                  <span className="podcast-date">{featuredPodcast.date}</span>
-                </div>
-              </div>
-
-              <div className="podcast-topics">
-                <h4>In this episode:</h4>
-                <ul>
-                  {podcastTopics.map((topic, i) => (
-                    <li key={i}>{topic}</li>
-                  ))}
-                </ul>
-              </div>
-
-              <a
-                href={featuredPodcast.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="podcast-listen-btn"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-                Listen Now
-              </a>
+            {/* Description */}
+            <div className="podcast-bfm-description">
+              <p>{featuredPodcast.description}</p>
             </div>
+
+            {/* Listen Button */}
+            <a
+              href={featuredPodcast.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="podcast-bfm-listen"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              Listen on {featuredPodcast.platform}
+            </a>
           </div>
         </div>
       </section>
