@@ -3,12 +3,26 @@ import { Link } from 'react-router-dom'
 import '../index.css'
 import '../pages.css'
 
-const podcasts = [
-  {
-    title: 'Coming Soon: ESG Conversations',
-    description: 'We\'re preparing a new podcast series featuring conversations with sustainability leaders, ESG practitioners, and climate experts across the region.',
-    status: 'upcoming'
-  }
+const featuredPodcast = {
+  title: 'The ESG Firm That Was 15 Years Early, Then Right On Time',
+  show: 'Open For Business',
+  description: 'Joshua Rayan, CEO of Joshua Rayan Communications, discusses how JRC became a vanguard in sustainability advisory — established in 2007, long before ESG became a boardroom mandate. The conversation covers their unique approach where senior leaders remain actively involved in client projects, their near 100% client closure rate, and their ambitious five-year roadmap.',
+  host: 'Audrey Raj',
+  guest: 'Joshua Rayan',
+  guestTitle: 'CEO, Joshua Rayan Communications',
+  duration: '29 min',
+  date: 'May 19, 2026',
+  image: 'https://bfmcms.s3.ap-southeast-1.amazonaws.com/websiteimages/open-for-business/2026-05-19_the-esg-firm-that-was-15-years-early-then-right-on-time-time/website_e4ada47d-e2c7-43a2-acfe-97f1291fe65c.png',
+  link: 'https://www.bfm.my/content/podcast/the-esg-firm-that-was-15-years-early-then-right-on-time',
+  platform: 'BFM 89.9'
+}
+
+const podcastTopics = [
+  'The "vanguard system" — senior leaders on every engagement',
+  'Building a bootstrapped consultancy with a flat structure',
+  'Near 100% client closure rate and what drives it',
+  'The five-year roadmap toward IPO',
+  'ESG practitioners and national policy development'
 ]
 
 function Podcasts() {
@@ -105,80 +119,93 @@ function Podcasts() {
         </div>
       </section>
 
-      {/* Coming Soon Section */}
-      <section className="podcasts-section">
+      {/* Featured Podcast Section */}
+      <section className="podcast-featured-section">
         <div className="container">
-          <div className="podcasts-coming-soon rv">
-            <div className="podcast-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <div className="podcast-featured rv">
+            <div className="podcast-featured-image">
+              <img src={featuredPodcast.image} alt={featuredPodcast.title} />
+              <div className="podcast-platform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                  <line x1="12" y1="19" x2="12" y2="23"/>
+                  <line x1="8" y1="23" x2="16" y2="23"/>
+                </svg>
+                {featuredPodcast.platform}
+              </div>
+            </div>
+            <div className="podcast-featured-content">
+              <div className="podcast-show-name">{featuredPodcast.show}</div>
+              <h2>{featuredPodcast.title}</h2>
+              <p className="podcast-description">{featuredPodcast.description}</p>
+
+              <div className="podcast-meta">
+                <div className="podcast-people">
+                  <div className="podcast-person">
+                    <span className="person-role">Host</span>
+                    <span className="person-name">{featuredPodcast.host}</span>
+                  </div>
+                  <div className="podcast-person">
+                    <span className="person-role">Guest</span>
+                    <span className="person-name">{featuredPodcast.guest}</span>
+                    <span className="person-title">{featuredPodcast.guestTitle}</span>
+                  </div>
+                </div>
+                <div className="podcast-info">
+                  <span className="podcast-duration">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 6v6l4 2"/>
+                    </svg>
+                    {featuredPodcast.duration}
+                  </span>
+                  <span className="podcast-date">{featuredPodcast.date}</span>
+                </div>
+              </div>
+
+              <div className="podcast-topics">
+                <h4>In this episode:</h4>
+                <ul>
+                  {podcastTopics.map((topic, i) => (
+                    <li key={i}>{topic}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <a
+                href={featuredPodcast.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="podcast-listen-btn"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+                Listen Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* More Episodes Coming Soon */}
+      <section className="podcast-more-section">
+        <div className="container">
+          <div className="podcast-more-content rv">
+            <div className="podcast-more-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
                 <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
                 <line x1="12" y1="19" x2="12" y2="23"/>
                 <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
             </div>
-            <h2>Coming <em>Soon</em></h2>
-            <p>We're preparing a new podcast series featuring conversations with sustainability leaders, ESG practitioners, and climate experts across the region.</p>
-            <p className="podcast-subtitle">Stay tuned for episodes on IFRS S1 & S2 implementation, climate risk management, and the future of corporate sustainability disclosure.</p>
-            <a href="mailto:jr@jr.com.my?subject=Podcast Updates - JRC" className="btn">
-              Get Notified When We Launch
+            <h3>More Episodes <em>Coming Soon</em></h3>
+            <p>We're working on bringing you more conversations with sustainability leaders, ESG practitioners, and climate experts across the region.</p>
+            <a href="mailto:jr@jr.com.my?subject=Podcast Updates - JRC" className="btn ghost">
+              Get Notified
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* What to Expect Section */}
-      <section className="podcast-preview-section">
-        <div className="container">
-          <div className="sec-head rv">
-            <div className="eyebrow">What to Expect.</div>
-            <h2>Topics we'll <em>explore</em></h2>
-          </div>
-          <div className="podcast-topics-grid rv">
-            <div className="podcast-topic">
-              <div className="topic-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                  <path d="M2 17l10 5 10-5"/>
-                  <path d="M2 12l10 5 10-5"/>
-                </svg>
-              </div>
-              <h3>IFRS S1 & S2</h3>
-              <p>Deep dives into sustainability disclosure standards and implementation strategies</p>
-            </div>
-            <div className="podcast-topic">
-              <div className="topic-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 6v6l4 2"/>
-                </svg>
-              </div>
-              <h3>Climate Risk</h3>
-              <p>Expert perspectives on climate scenario analysis and risk assessment</p>
-            </div>
-            <div className="podcast-topic">
-              <div className="topic-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <h3>Leadership Insights</h3>
-              <p>Conversations with sustainability leaders from leading listed companies</p>
-            </div>
-            <div className="podcast-topic">
-              <div className="topic-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                  <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-              </div>
-              <h3>ESG Strategy</h3>
-              <p>Practical guidance on building effective sustainability programmes</p>
-            </div>
           </div>
         </div>
       </section>
