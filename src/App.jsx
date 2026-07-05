@@ -191,6 +191,13 @@ function App() {
               <span className="line"><span>by leading listed companies</span></span>
               <span className="line"><span>in Malaysia and Southeast Asia</span></span>
             </h1>
+            <Link to="/podcasts" className="featured-link">
+              <span className="featured-icon">🎙</span>
+              Recently featured on BFM 89.9's Open For Business
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </Link>
             <p className="lede">
               For 24 years, we've supported listed companies and government agencies across the region at every stage of the reporting journey—as advisers, trainers, and reporting specialists.
             </p>

@@ -604,6 +604,45 @@ body.menu-open { overflow: hidden; }
   color: var(--gold);
 }
 
+.featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeUp 1s var(--ease) .45s forwards;
+  transition: all 0.3s ease;
+}
+
+.featured-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.featured-link .featured-icon {
+  font-size: 16px;
+}
+
+.featured-link svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.featured-link:hover svg {
+  transform: translateX(4px);
+}
+
 .hero .lede {
   max-width: 600px;
   margin-top: 30px;
