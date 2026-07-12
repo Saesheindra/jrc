@@ -241,7 +241,7 @@ function Awards() {
               <Link to="/awards" className="active">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts">Podcast</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -372,7 +372,7 @@ function Awards() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -382,7 +382,7 @@ function Awards() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

@@ -30,7 +30,7 @@ const articles = [
     link: 'https://www.linkedin.com/posts/joshua-rayan-communications_climate-risk-sustainability-activity-7272119329653960705-58qH'
   },
   {
-    title: 'IFRS S1 & S2 Implementation Progress for Malaysian PLCs',
+    title: 'IFRS S1 & IFRS S2 Implementation Progress for Malaysian PLCs',
     excerpt: 'As a licensed IFRS Training Partner and member of the IFRS Sustainability Alliance, JRC works at the frontier of IFRS S1 & IFRS S2 implementation with regular engagement with Bursa Malaysia and SIDC.',
     category: 'IFRS',
     link: 'https://www.linkedin.com/posts/joshua-rayan-communications_ifrs-reporting-progress-activity-7408696754772201472-0J_g'
@@ -131,7 +131,7 @@ function Blog() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog" className="active">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts">Podcast</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -157,7 +157,7 @@ function Blog() {
         <div className="container">
           <div className="eyebrow">Blog.</div>
           <h1>Thinking on <em>sustainability.</em></h1>
-          <p>Expert perspectives on ESG strategy, climate disclosure, integrated reporting, and the evolving sustainability landscape.</p>
+          <p>Expert perspectives on ESG strategy, climate disclosure, integrated reporting and the evolving sustainability landscape.</p>
         </div>
       </section>
 
@@ -174,7 +174,7 @@ function Blog() {
               </div>
               <div className="linkedin-cta-text">
                 <h3>Stay connected with JRC</h3>
-                <p>Get the latest ESG insights, sustainability trends, and industry updates delivered to your feed.</p>
+                <p>Get the latest ESG insights, sustainability trends and industry updates delivered to your feed.</p>
               </div>
             </div>
             <a
@@ -193,7 +193,7 @@ function Blog() {
           <div className="articles-header">
             <div>
               <div className="eyebrow">Our Thinking.</div>
-              <h2>The latest from <em>JRC</em></h2>
+              <h2>The latest from <em>JRC.</em></h2>
             </div>
           </div>
 
@@ -243,7 +243,7 @@ function Blog() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -253,7 +253,7 @@ function Blog() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

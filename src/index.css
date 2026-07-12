@@ -644,7 +644,7 @@ body.menu-open { overflow: hidden; }
 }
 
 .hero .lede {
-  max-width: 600px;
+  max-width: 800px;
   margin-top: 30px;
   color: var(--fog);
   font-size: 17.5px;
@@ -769,7 +769,7 @@ h2 {
   font-family: 'Newsreader', serif;
   font-weight: 300;
   font-size: clamp(36px, 4.8vw, 64px);
-  line-height: 1.06;
+  line-height: 1.15;
   letter-spacing: -.015em;
 }
 h2 em {
@@ -1404,7 +1404,7 @@ h2 em::after {
   font-size: 10.5px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--fog-dim);
+  color: var(--fog);
   pointer-events: none;
 }
 .logo-fallback {

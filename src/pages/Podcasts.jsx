@@ -108,9 +108,9 @@ function Podcasts() {
 
       <section className="page-hero">
         <div className="container">
-          <div className="eyebrow">Podcasts.</div>
+          <div className="eyebrow">Podcast.</div>
           <h1>Conversations on <em>sustainability.</em></h1>
-          <p>Listen to expert discussions on ESG strategy, climate disclosure, integrated reporting, and the future of sustainable business.</p>
+          <p>Listen to expert discussions on ESG strategy, climate disclosure, integrated reporting and the future of sustainable business.</p>
         </div>
       </section>
 
@@ -174,11 +174,8 @@ function Podcasts() {
                 <line x1="8" y1="23" x2="16" y2="23"/>
               </svg>
             </div>
-            <h3>More Episodes <em>Coming Soon</em></h3>
-            <p>We're working on bringing you more conversations with sustainability leaders, ESG practitioners, and climate experts across the region.</p>
-            <a href="mailto:jr@jr.com.my?subject=Podcast Updates - JRC" className="btn ghost">
-              Get Notified
-            </a>
+            <h3>More Episodes <em>Coming Soon.</em></h3>
+            <p>We're working on bringing you more conversations with sustainability leaders, ESG practitioners and climate experts across the region.</p>
           </div>
         </div>
       </section>
@@ -191,7 +188,7 @@ function Podcasts() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -201,7 +198,7 @@ function Podcasts() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

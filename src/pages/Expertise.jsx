@@ -18,7 +18,7 @@ const reportingServices = [
   },
   {
     title: 'Corporate Governance',
-    description: 'Governance statements, policy reviews, board and committee charters, and governance frameworks aligned with best practice, regulatory expectations, and climate-related risks and opportunities.'
+    description: 'Governance statements, policy reviews, board and committee charters and governance frameworks aligned with best practice, regulatory expectations and climate-related risks and opportunities.'
   },
   {
     title: 'Leadership Communications',
@@ -97,7 +97,7 @@ const trainingServices = [
   {
     tag: 'DMA',
     title: 'Materiality & Double Materiality',
-    description: 'Facilitated single and double materiality assessments — running the stakeholder and impact lens that anchors the whole report.'
+    description: 'Facilitates single and double materiality assessments — running the stakeholder and impact lens that anchors the whole report.'
   },
   {
     tag: 'BOARD',
@@ -201,7 +201,7 @@ function Expertise() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts">Podcast</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -240,10 +240,10 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span>01.</span> <span>JRC</span> / <span className="gold">TRAINING</span>
+                <span className="gold">01.</span> <span className="gold">TRAINING.</span>
               </div>
               <h2>Workshops that build <em>capability</em> in your team.</h2>
-              <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on, and built so your team can do the work themselves afterwards.</p>
+              <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on and built so your team can do the work themselves afterwards.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
               </div>
@@ -258,7 +258,7 @@ function Expertise() {
           <div className="what-we-run-header rv">
             <div className="what-we-run-label">
               <span className="label-line"></span>
-              <span>WHAT WE RUN</span>
+              <span>WHAT WE RUN.</span>
             </div>
             <h2>From the basics to <em>hands-on practice.</em></h2>
             <p>The people running these sessions are the same ones who write the reports, so the training reflects how the work is really done.</p>
@@ -281,10 +281,10 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span>02.</span> <span>JRC</span> / <span className="gold">GUIDANCE & ADVISORY</span>
+                <span className="gold">02.</span> <span className="gold">GUIDANCE & ADVISORY.</span>
               </div>
               <h2>ESG advice that <em>holds up</em> in the report.</h2>
-              <p>We help listed companies decide what matters, measure it properly, and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
+              <p>We help listed companies decide what matters, measure it properly and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Advisory Inquiry" className="btn training-btn-gold">START A CONVERSATION</a>
               </div>
@@ -299,7 +299,7 @@ function Expertise() {
           <div className="what-we-run-header rv">
             <div className="what-we-run-label">
               <span className="label-line"></span>
-              <span>WHAT WE ADVISE ON</span>
+              <span>WHAT WE ADVISE ON.</span>
             </div>
             <h2>The whole ESG programme, <em>joined up.</em></h2>
             <p>Strategy, measurement and targets — handled together, and always with the report in mind.</p>
@@ -322,7 +322,7 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span>03.</span> <span>JRC</span> / <span className="gold">REPORT WRITING</span>
+                <span className="gold">03.</span> <span className="gold">REPORT WRITING.</span>
               </div>
               <h2>Reports that connect <em>strategy, governance & performance.</em></h2>
               <p>This is where JRC started. For 24 years we've written the integrated, annual, sustainability and corporate governance reports that listed companies are judged on — and many have gone on to win awards.</p>
@@ -340,7 +340,7 @@ function Expertise() {
           <div className="what-we-run-header rv">
             <div className="what-we-run-label">
               <span className="label-line"></span>
-              <span>WHAT WE WRITE</span>
+              <span>WHAT WE WRITE.</span>
             </div>
             <h2>Every report a listed company <em>has to get right.</em></h2>
           </div>
@@ -374,7 +374,7 @@ function Expertise() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -384,7 +384,7 @@ function Expertise() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

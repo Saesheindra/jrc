@@ -99,7 +99,7 @@ function Careers() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts">Podcast</Link>
               <Link to="/careers" className="active">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -133,7 +133,7 @@ function Careers() {
         <div className="container">
           <div className="sec-head rv">
             <div className="eyebrow">Open Positions.</div>
-            <h2>Opportunities <em>available</em></h2>
+            <h2>Opportunities <em>available.</em></h2>
           </div>
           <div className="jobs-list">
             {jobs.map((job) => (
@@ -181,7 +181,7 @@ function Careers() {
         <div className="container rv">
           <div className="eyebrow" style={{ justifyContent: 'center' }}>General Application.</div>
           <h2>No perfect match? <em>Reach out anyway.</em></h2>
-          <p>We're always looking for exceptional talent. Send us your resume and we'll keep you in mind for future opportunities.</p>
+          <p>We're always looking for exceptional talents. Send us your resume and we'll keep you in mind for future opportunities.</p>
           <a className="email" href="mailto:jr@jr.com.my?subject=General Application - JRC Careers">jr@jr.com.my</a>
         </div>
       </section>
@@ -194,7 +194,7 @@ function Careers() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -204,7 +204,7 @@ function Careers() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>

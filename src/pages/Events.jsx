@@ -17,7 +17,7 @@ const pastWorkshops = [
 
 // Recent Workshop Sessions 2026
 const recentSessions = [
-  { image: '/assets/sessions/t01-mah-sing-ifrs.jpg', title: 'IFRS S1 & S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
+  { image: '/assets/sessions/t01-mah-sing-ifrs.jpg', title: 'IFRS S1 & IFRS S2 standards briefing', company: 'Mah Sing', date: 'Jan 2026' },
   { image: '/assets/sessions/t02-mah-sing-ifrs.jpg', title: 'Walking the room through the standards', company: 'Mah Sing', date: 'Jan 2026' },
   { image: '/assets/sessions/t03-ame-cra.jpg', title: 'Facilitating a Climate Risk Assessment', company: 'AME', date: 'Apr 2026' },
   { image: '/assets/sessions/t04-ame-cra.jpg', title: 'Hands-on scenario exercise', company: 'AME', date: 'Apr 2026' },
@@ -109,7 +109,7 @@ function Events() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events" className="active">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts">Podcasts</Link>
+              <Link to="/podcasts">Podcast</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -137,8 +137,8 @@ function Events() {
         <div className="container">
           <div className="events-hero-content">
             <div className="eyebrow">Events.</div>
-            <h1>Workshops, Webcasts & <em>Collaboration.</em></h1>
-            <p>Building capacity for better disclosure through hands-on training, expert-led workshops, and thought leadership sessions on sustainability reporting.</p>
+            <h1>Workshops, Webcasts & Collaboration.</h1>
+            <p>Building capacity for better disclosure through hands-on training, expert-led workshops and thought leadership sessions on sustainability reporting.</p>
           </div>
         </div>
         <div className="hero-accent"></div>
@@ -148,7 +148,7 @@ function Events() {
       <section className="no-events-section">
         <div className="container">
           <div className="no-events-content rv">
-            <h2>No Upcoming <em>Events</em></h2>
+            <h2>No Upcoming <em>Events.</em></h2>
             <p>We're currently preparing our next series of workshops and training sessions. Great things take time — and we're crafting experiences that deliver real value.</p>
             <p className="no-events-cta">Interested in a private workshop or corporate training? <a href="mailto:jr@jr.com.my">Get in touch</a> and let's design something tailored for your team.</p>
           </div>
@@ -159,7 +159,7 @@ function Events() {
       <section className="in-room-section">
         <div className="container">
           <div className="in-room-header rv">
-            <div className="in-room-label">In the room · 2026</div>
+            <div className="eyebrow">In the room · 2026.</div>
             <h2>Recent <em>sessions.</em></h2>
             <p className="in-room-desc">A look inside our 2026 workshops with listed companies — climate risk, IFRS, materiality and carbon, across the region.</p>
             <div className="hrd-banner">
@@ -187,7 +187,7 @@ function Events() {
         <div className="container">
           <div className="past-events-header rv">
             <div className="eyebrow">What We've Done.</div>
-            <h2>Past <em>Workshops</em></h2>
+            <h2>Past <em>Workshops.</em></h2>
           </div>
           <div className="past-events-grid">
             {pastWorkshops.map((workshop, i) => (
@@ -207,8 +207,8 @@ function Events() {
       <section className="collaborate-section">
         <div className="container">
           <div className="collaborate-content rv">
-            <h2>Let's <em>Collaborate</em></h2>
-            <p>We believe the best outcomes happen when bold ideas come together. Looking for customised training for your organisation?</p>
+            <h2>Let's <em>Collaborate.</em></h2>
+            <p>We believe the best outcomes happen when bold ideas come together. Looking for customised trainings for your organisation?</p>
             <div className="collaborate-actions">
               <a href="mailto:jr@jr.com.my" className="collab-btn primary">Get In Touch</a>
             </div>
@@ -222,10 +222,10 @@ function Events() {
           <div className="stay-updated-content rv">
             <div>
               <h3>Stay Updated</h3>
-              <p>Get notified about upcoming workshops, webinars, and sustainability insights.</p>
+              <p>Get notified about upcoming workshops, webinars and sustainability insights.</p>
             </div>
             <a href="mailto:jr@jr.com.my?subject=Subscribe to JRC Events" className="subscribe-btn">
-              Subscribe to Updates
+              Contact Us for More Updates
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
@@ -243,7 +243,7 @@ function Events() {
                 <img src="/jrc-logo.png" alt="JRC" className="footer-logo" />
                 <span className="footer-brand-name">JOSHUA <span className="gold">RAYAN</span> COMMUNICATIONS</span>
               </Link>
-              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks, and deliver credible disclosures.</p>
+              <p>Malaysia's leading sustainability guidance and advisory firm, helping organisations strengthen governance, build internal capability, manage sustainability and climate risks and deliver credible disclosures.</p>
             </div>
             <div>
               <div className="footer-heading">Quick Links</div>
@@ -253,7 +253,7 @@ function Events() {
                 <li><Link to="/awards">Awards & Recognitions</Link></li>
                 <li><Link to="/events">Events</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/podcasts">Podcasts</Link></li>
+                <li><Link to="/podcasts">Podcast</Link></li>
                 <li><Link to="/careers">Careers</Link></li>
               </ul>
             </div>
