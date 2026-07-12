@@ -27,7 +27,7 @@ function Podcasts() {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
-    document.title = 'Podcasts - JRC | Joshua Rayan Communications'
+    document.title = 'Podcast - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 
@@ -84,7 +84,7 @@ function Podcasts() {
               <Link to="/awards">Awards & Recognitions</Link>
               <Link to="/events">Events</Link>
               <Link to="/blog">Blog</Link>
-              <Link to="/podcasts" className="active">Podcasts</Link>
+              <Link to="/podcasts" className="active">Podcast</Link>
               <Link to="/careers">Careers</Link>
               <button onClick={() => setContactOpen(true)} className="btn ghost">Contact Us</button>
             </nav>
@@ -101,7 +101,7 @@ function Podcasts() {
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcasts</Link>
+          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcast</Link>
           <Link to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
         </nav>
       </div>
