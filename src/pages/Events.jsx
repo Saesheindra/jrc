@@ -127,7 +127,7 @@ function Events() {
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcasts</Link>
+          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcast</Link>
           <Link to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
         </nav>
       </div>
@@ -137,7 +137,7 @@ function Events() {
         <div className="container">
           <div className="events-hero-content">
             <div className="eyebrow">Events.</div>
-            <h1>Workshops, Webcasts & Collaboration.</h1>
+            <h1>Workshops, Webcasts & <em>Collaboration.</em></h1>
             <p>Building capacity for better disclosure through hands-on training, expert-led workshops and thought leadership sessions on sustainability reporting.</p>
           </div>
         </div>

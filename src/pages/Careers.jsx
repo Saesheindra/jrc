@@ -116,7 +116,7 @@ function Careers() {
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcasts</Link>
+          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcast</Link>
           <Link to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
         </nav>
       </div>

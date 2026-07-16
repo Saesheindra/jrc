@@ -219,7 +219,7 @@ function Expertise() {
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
-          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcasts</Link>
+          <Link to="/podcasts" onClick={() => setMobileMenuOpen(false)}>Podcast</Link>
           <Link to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</Link>
         </nav>
       </div>
@@ -240,7 +240,7 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span className="gold">01.</span> <span className="gold">TRAINING.</span>
+                <span className="gold">01 ·</span> <span className="gold">Training.</span>
               </div>
               <h2>Workshops that build <em>capability</em> in your team.</h2>
               <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on and built so your team can do the work themselves afterwards.</p>
@@ -281,7 +281,7 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span className="gold">02.</span> <span className="gold">GUIDANCE & ADVISORY.</span>
+                <span className="gold">02 ·</span> <span className="gold">Guidance & Advisory.</span>
               </div>
               <h2>ESG advice that <em>holds up</em> in the report.</h2>
               <p>We help listed companies decide what matters, measure it properly and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
@@ -322,7 +322,7 @@ function Expertise() {
           <div className="container">
             <div className="training-hero-content rv">
               <div className="training-label">
-                <span className="gold">03.</span> <span className="gold">REPORT WRITING.</span>
+                <span className="gold">03 ·</span> <span className="gold">Report Writing.</span>
               </div>
               <h2>Reports that connect <em>strategy, governance & performance.</em></h2>
               <p>This is where JRC started. For 24 years we've written the integrated, annual, sustainability and corporate governance reports that listed companies are judged on — and many have gone on to win awards.</p>

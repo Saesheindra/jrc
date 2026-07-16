@@ -67,7 +67,7 @@ export default function ClientGlobe() {
       const tex = loader.load(uri, () => {
         // Make all logos fill a uniform square size
         // This ensures all logos appear at consistent size on the globe
-        const uniformSize = 0.72
+        const uniformSize = 0.95
         sprite.scale.set(uniformSize, uniformSize, 1)
         sprite.userData.baseX = uniformSize
         sprite.userData.baseY = uniformSize
@@ -84,9 +84,9 @@ export default function ClientGlobe() {
         Math.sin(th) * rad * R
       )
       // Uniform square scale for all logos
-      sprite.scale.set(0.72, 0.72, 1)
-      sprite.userData.baseX = 0.72
-      sprite.userData.baseY = 0.72
+      sprite.scale.set(0.95, 0.95, 1)
+      sprite.userData.baseX = 0.95
+      sprite.userData.baseY = 0.95
 
       group.add(sprite)
       sprites.push(sprite)

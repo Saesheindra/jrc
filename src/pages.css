@@ -46,7 +46,7 @@
 .page-hero p {
   font-size: 18px;
   color: var(--fog);
-  max-width: 800px;
+  max-width: 950px;
   line-height: 1.7;
 }
 
@@ -1976,6 +1976,17 @@
   font-weight: 400;
   color: var(--paper);
 }
+.articles-header h2 em {
+  font-style: italic;
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.articles-header h2 em::after {
+  display: none;
+}
 
 .linkedin-link {
   display: flex;
@@ -3017,7 +3028,7 @@
   pointer-events: none;
 }
 .events-hero-content {
-  max-width: 800px;
+  max-width: 950px;
 }
 .events-hero h1 {
   font-family: 'Newsreader', serif;
@@ -3038,7 +3049,7 @@
   font-size: 18px;
   color: var(--fog);
   line-height: 1.7;
-  max-width: 600px;
+  max-width: 950px;
 }
 .hero-accent {
   position: absolute;
@@ -3225,6 +3236,10 @@
 .no-events-content h2 em {
   font-style: italic;
   color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 .no-events-content h2 em::after {
   display: none;
@@ -3623,6 +3638,10 @@
 .in-room-header h2 em {
   font-style: italic;
   color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 .in-room-header h2 em::after {
   display: none;
@@ -3769,6 +3788,10 @@
 .past-events-header h2 em {
   font-style: italic;
   color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
 }
 .past-events-header h2 em::after {
   display: none;
@@ -3856,6 +3879,13 @@
 .collaborate-content h2 em {
   font-style: italic;
   color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.collaborate-content h2 em::after {
+  display: none;
 }
 .collaborate-content p {
   font-size: 18px;
@@ -4183,6 +4213,13 @@
 .podcast-more-content h3 em {
   font-style: italic;
   color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1px;
+}
+.podcast-more-content h3 em::after {
+  display: none;
 }
 
 .podcast-more-content p {
