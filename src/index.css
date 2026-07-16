@@ -1383,7 +1383,7 @@ h2 em::after {
   position: relative;
   height: min(78vh, 760px);
   min-height: 480px;
-  margin-bottom: 110px;
+  margin-bottom: 200px;
 }
 #globeCanvas {
   position: absolute;
@@ -1398,7 +1398,7 @@ h2 em::after {
 }
 .globe-hint {
   position: absolute;
-  bottom: -100px;
+  bottom: -180px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Spline Sans Mono', monospace;
