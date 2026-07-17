@@ -1398,7 +1398,7 @@ h2 em::after {
 }
 .globe-hint {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Newsreader', serif;
