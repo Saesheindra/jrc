@@ -3041,10 +3041,6 @@
   font-style: italic;
   font-weight: 500;
   color: var(--gold);
-  text-decoration: underline;
-  text-decoration-color: var(--gold);
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1px;
 }
 .events-hero p {
   font-size: 18px;
