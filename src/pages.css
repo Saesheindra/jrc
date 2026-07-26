@@ -3037,12 +3037,13 @@
   line-height: 1.1;
   margin-bottom: 24px;
 }
-/* No underline on Collaboration */
+/* No underline on Collaboration - updated */
 .events-hero h1 em {
   font-style: italic;
   font-weight: 500;
   color: var(--gold);
   text-decoration: none !important;
+  text-decoration-line: none !important;
   border-bottom: none !important;
 }
 .events-hero p {
