@@ -229,7 +229,7 @@ function Expertise() {
         <div className="container">
           <div className="eyebrow">Our Expertise.</div>
           <h1>The full sustainability <em>spectrum.</em></h1>
-          <p>A comprehensive range of ESG advisory, integrated reporting, and climate disclosure solutions for organisations across Malaysia, Indonesia, and Singapore.</p>
+          <p>A comprehensive range of ESG advisory, integrated reporting and climate disclosure solutions for organisations across Malaysia, Indonesia, and Singapore.</p>
         </div>
       </section>
 

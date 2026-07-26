@@ -10,8 +10,8 @@ const jobs = [
     type: 'Internship',
     location: 'Kuala Lumpur',
     description: 'Gain hands-on experience in ESG reporting, sustainability consulting, and climate-related advisory projects.',
-    responsibilities: ['Support ESG data analysis and sustainability report drafting', 'Assist in ESG research, benchmarking, and materiality assessments', 'Prepare presentations, reports, and meeting documentation'],
-    requirements: ['Background in Environmental Science, Business, Journalism, or related fields', 'Strong English writing, research, and analytical skills', 'Proficiency in Microsoft Excel, Word, and PowerPoint']
+    responsibilities: ['Support ESG data analysis and sustainability report drafting', 'Assist in ESG research, benchmarking and materiality assessments', 'Prepare presentations, reports and meeting documentation'],
+    requirements: ['Background in Environmental Science, Business, Journalism, or related fields', 'Strong English writing, research and analytical skills', 'Proficiency in Microsoft Excel, Word and PowerPoint']
   },
   {
     id: 2,
@@ -19,17 +19,17 @@ const jobs = [
     type: 'Full-time',
     location: 'Kuala Lumpur',
     description: 'Work on sustainability reporting, ESG strategy, climate-related disclosures, and advisory projects for listed companies.',
-    responsibilities: ['Develop ESG reports, policies, and climate-related disclosures', 'Conduct ESG gap analysis, benchmarking, and materiality assessments', 'Present ESG findings and strategies to Boards and senior management'],
-    requirements: ['Experience in ESG consulting or sustainability reporting (2-5 years preferred)', 'Strong knowledge of ESG frameworks (GRI, IFRS S1 & S2, FTSE, etc.)', 'Excellent English writing, analytical, and communication skills']
+    responsibilities: ['Develop ESG reports, policies and climate-related disclosures', 'Conduct ESG gap analysis, benchmarking and materiality assessments', 'Present ESG findings and strategies to Boards and senior management'],
+    requirements: ['Experience in ESG consulting or sustainability reporting (2-5 years preferred)', 'Strong knowledge of ESG frameworks (GRI, IFRS S1 & IFRS S2, FTSE, etc.)', 'Excellent English writing, analytical and communication skills']
   },
   {
     id: 3,
     title: 'Financial-Based Sustainability and Climate Risk Specialist',
     type: 'Full-time',
     location: 'Kuala Lumpur',
-    description: 'Lead sustainability-related financial analysis, climate risk quantification, and IFRS S1 & S2 reporting engagements.',
-    responsibilities: ['Build financial models and climate scenario analysis (NGFS, SSPs)', 'Quantify climate-related risks and translate into financial impact', 'Support IFRS S1 & S2 disclosures and client reporting deliverables'],
-    requirements: ['Finance/Accounting/Economics background with 2-8 years experience', 'Strong financial modelling and corporate finance capability', 'Knowledge of IFRS S1 & S2 and climate risk frameworks']
+    description: 'Lead sustainability-related financial analysis, climate risk quantification, and IFRS S1 & IFRS S2 reporting engagements.',
+    responsibilities: ['Build financial models and climate scenario analysis (NGFS, SSPs)', 'Quantify climate-related risks and translate into financial impact', 'Support IFRS S1 & IFRS S2 disclosures and client reporting deliverables'],
+    requirements: ['Finance/Accounting/Economics background with 2-8 years experience', 'Strong financial modelling and corporate finance capability', 'Knowledge of IFRS S1 & IFRS S2 and climate risk frameworks']
   }
 ]
 
