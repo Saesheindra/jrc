@@ -193,6 +193,9 @@
   background: var(--ink);
 }
 
+.training-section .container {
+  max-width: 1400px;
+}
 .training-hero-content {
   position: relative;
   z-index: 2;
@@ -239,7 +242,7 @@
   font-size: 16px;
   color: var(--fog);
   line-height: 1.7;
-  max-width: 1150px;
+  max-width: 1400px;
   margin-bottom: 36px;
 }
 
