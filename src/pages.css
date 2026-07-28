@@ -43,6 +43,9 @@
   color: var(--gold);
   font-weight: 400;
 }
+.page-hero .container {
+  max-width: 1400px;
+}
 .page-hero p {
   font-size: 18px;
   color: var(--fog);
