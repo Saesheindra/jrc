@@ -504,9 +504,12 @@ nav.links a.active { color: var(--gold); }
   color: var(--paper);
   text-decoration: none;
   font-size: 18px;
-  padding: 6px 0;
+  padding: 12px 0;
   display: inline-block;
   border: none;
+  /* Mobile touch target fix - minimum 44px height */
+  min-height: 44px;
+  line-height: 20px;
 }
 .m-menu .m-contact a:hover { color: var(--gold); }
 
