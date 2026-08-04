@@ -279,7 +279,7 @@ function Awards() {
               <div key={i} className={`acard-flip rv d${(i % 4) + 1}`}>
                 <div className="acard-inner">
                   <div className="face front">
-                    <img src={award.logo} alt={`${award.org} logo`} />
+                    <img src={award.logo} alt={`${award.org} logo`} loading="lazy" />
                     <div className="yr">{award.year}</div>
                     <h3>{award.name}</h3>
                     <div className="medals">

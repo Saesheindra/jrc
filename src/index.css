@@ -1617,8 +1617,9 @@ footer a:hover { color: var(--gold); }
 }
 .footer-heading {
   font-family: 'Spline Sans Mono', monospace;
-  font-size: 10px;
-  letter-spacing: .2em;
+  /* Font size fix - increased from 10px to 12px for mobile readability */
+  font-size: 12px;
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 20px;
@@ -1626,25 +1627,31 @@ footer a:hover { color: var(--gold); }
 .footer-links {
   list-style: none;
 }
-.footer-links li { margin-bottom: 12px; }
+.footer-links li { margin-bottom: 4px; }
 .footer-links a {
   color: var(--fog);
   font-size: 14px;
   transition: color .3s;
+  /* Mobile touch target fix - minimum 44px height */
+  display: inline-block;
+  padding: 10px 0;
+  min-height: 44px;
+  line-height: 24px;
 }
 .footer-links a:hover { color: var(--paper); }
 
 .footer-social {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   margin-top: 8px;
 }
 .footer-social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  /* Mobile touch target fix - minimum 44x44px */
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--line);
   color: var(--fog);
@@ -1720,16 +1727,26 @@ footer a:hover { color: var(--gold); }
 }
 .modal-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
   background: none;
   border: none;
   color: var(--fog);
   font-size: 28px;
   cursor: pointer;
-  transition: color .3s;
+  transition: color .3s, background .3s;
+  /* Mobile touch target fix - minimum 44x44px */
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
-.modal-close:hover { color: var(--gold); }
+.modal-close:hover {
+  color: var(--gold);
+  background: rgba(212, 175, 55, 0.1);
+}
 .modal-content h2 {
   font-family: 'Newsreader', serif;
   font-size: 32px;
@@ -1813,5 +1830,76 @@ footer a:hover { color: var(--gold); }
     right: 24px;
     width: 44px;
     height: 44px;
+  }
+}
+
+/* =====================================================
+   ACCESSIBILITY - Reduced Motion Support
+   ===================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .rv {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .hero h1 .line span {
+    transform: none;
+    animation: none;
+  }
+
+  .ticker {
+    animation: none;
+  }
+
+  .grain {
+    display: none;
+  }
+}
+
+/* =====================================================
+   SAFE AREA - iPhone X+ Notch/Home Indicator Support
+   ===================================================== */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    /* Ensure content doesn't go under the notch or home indicator */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  header {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  footer {
+    padding-bottom: calc(36px + env(safe-area-inset-bottom));
+  }
+
+  .m-menu {
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+  }
+
+  .scroll-to-top {
+    bottom: calc(32px + env(safe-area-inset-bottom));
+  }
+
+  @media (max-width: 768px) {
+    .scroll-to-top {
+      bottom: calc(24px + env(safe-area-inset-bottom));
+    }
+  }
+
+  .modal-overlay {
+    padding: calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));
   }
 }

@@ -220,7 +220,7 @@ export default function ClientGlobe() {
     return (
       <div className="logo-fallback fallback-on">
         {clientLogos.map((logo, i) => (
-          <img key={i} src={logo} alt="JRC client logo" />
+          <img key={i} src={logo} alt="JRC client logo" loading="lazy" />
         ))}
       </div>
     )
