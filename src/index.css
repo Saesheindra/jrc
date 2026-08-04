@@ -178,6 +178,8 @@ header.hdr-hide { transform: translateY(-100%); }
   gap: 14px;
   text-decoration: none;
   margin-right: 40px;
+  /* Mobile touch target fix - minimum 44px height */
+  min-height: 44px;
 }
 .brand .mark {
   font-family: 'Newsreader', serif;
@@ -193,7 +195,8 @@ header.hdr-hide { transform: translateY(-100%); }
   color: var(--fog);
 }
 .brand-logo {
-  height: 36px;
+  /* Mobile touch target fix - minimum 44px */
+  height: 44px;
   width: auto;
   border-radius: 4px;
 }
@@ -247,6 +250,7 @@ nav.links a.active { color: var(--gold); }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   background: var(--gold);
   color: var(--ink);
@@ -255,13 +259,15 @@ nav.links a.active { color: var(--gold); }
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 14px 24px;
   border: 1.5px solid var(--gold);
   border-radius: 3px;
   position: relative;
   overflow: hidden;
   transition: background .3s, color .3s, box-shadow .3s, transform .3s var(--ease);
   cursor: pointer;
+  /* Mobile touch target fix - minimum 44px height */
+  min-height: 44px;
 }
 .btn::before {
   content: "";
