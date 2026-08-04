@@ -1537,6 +1537,8 @@ h2 em::after {
   position: relative;
   padding-bottom: 6px;
   transition: letter-spacing .7s var(--ease);
+  /* Mobile touch target fix - minimum 44px height */
+  min-height: 44px;
 }
 .contact-section .email:hover { letter-spacing: .03em; }
 .contact-section .email::after {
