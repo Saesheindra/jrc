@@ -714,6 +714,42 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 760px) {
   .cred-row { grid-template-columns: 1fr; }
   .hero .inner { padding-top: 120px; }
+
+  /* Fix mobile text overflow - allow wrapping */
+  .hero h1 .line {
+    white-space: normal;
+  }
+  .hero h1 .line span {
+    white-space: normal;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+
+  /* Credentials section - prevent overflow */
+  .cred {
+    padding: 20px 20px;
+  }
+  .cred b {
+    font-size: 20px;
+    word-wrap: break-word;
+  }
+  .cred > span {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+
+  /* Featured link - allow wrapping */
+  .featured-link {
+    font-size: 13px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  /* Lede paragraph */
+  .hero .lede {
+    font-size: 15px;
+  }
 }
 
 .scroll-hint {
