@@ -112,9 +112,9 @@ export default function ClientGlobe() {
       camera.updateProjectionMatrix()
       // Push camera back further on mobile so entire globe fits in viewport
       if (w < 480) {
-        camera.position.z = 14.5  // Small phones - much further back
+        camera.position.z = 19  // Small phones - zoomed out significantly
       } else if (w < 640) {
-        camera.position.z = 12.5  // Larger phones/small tablets
+        camera.position.z = 15  // Larger phones/small tablets
       } else {
         camera.position.z = 8.4   // Desktop
       }
