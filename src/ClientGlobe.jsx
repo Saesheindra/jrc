@@ -110,7 +110,14 @@ export default function ClientGlobe() {
       renderer.setSize(w, h, false)
       camera.aspect = w / h
       camera.updateProjectionMatrix()
-      camera.position.z = w < 640 ? 10.6 : 8.4
+      // Push camera back further on mobile so entire globe fits in viewport
+      if (w < 480) {
+        camera.position.z = 14.5  // Small phones - much further back
+      } else if (w < 640) {
+        camera.position.z = 12.5  // Larger phones/small tablets
+      } else {
+        camera.position.z = 8.4   // Desktop
+      }
     }
     size()
     window.addEventListener('resize', size)
