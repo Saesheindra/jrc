@@ -40,6 +40,7 @@ function Careers() {
   const [contactOpen, setContactOpen] = useState(false)
   const [expandedJob, setExpandedJob] = useState(null)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
 
   useEffect(() => {
     document.title = 'Careers - JRC | Joshua Rayan Communications'
@@ -112,7 +113,20 @@ function Careers() {
 
       <div className={`m-menu ${mobileMenuOpen ? 'open' : ''}`}>
         <nav>
-          <Link to="/expertise" onClick={() => setMobileMenuOpen(false)}>Our Expertise</Link>
+          <div className="m-menu-dropdown">
+            <button
+              className={`m-menu-toggle ${mobileExpertiseOpen ? 'open' : ''}`}
+              onClick={() => setMobileExpertiseOpen(!mobileExpertiseOpen)}
+            >
+              Our Expertise
+              <span className="m-menu-arrow">▼</span>
+            </button>
+            <div className={`m-menu-subnav ${mobileExpertiseOpen ? 'open' : ''}`}>
+              <Link to="/expertise#workshop" onClick={() => { setMobileMenuOpen(false); setMobileExpertiseOpen(false); }}>Training</Link>
+              <Link to="/expertise#advisory" onClick={() => { setMobileMenuOpen(false); setMobileExpertiseOpen(false); }}>Guidance & Advisory</Link>
+              <Link to="/expertise#reporting" onClick={() => { setMobileMenuOpen(false); setMobileExpertiseOpen(false); }}>Report Writing</Link>
+            </div>
+          </div>
           <Link to="/awards" onClick={() => setMobileMenuOpen(false)}>Awards & Recognitions</Link>
           <Link to="/events" onClick={() => setMobileMenuOpen(false)}>Events</Link>
           <Link to="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
