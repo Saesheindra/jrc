@@ -425,6 +425,14 @@
     justify-content: center;
     text-align: center;
   }
+
+  /* Fix underline for gold text on mobile - use text-decoration instead of pseudo-element */
+  .training-hero-content h2 em {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+  }
 }
 
 @media (max-width: 600px) {
