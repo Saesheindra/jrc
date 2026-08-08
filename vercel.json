@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.jrcesg.com"
+        }
+      ],
+      "destination": "https://jrcesg.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/expertise",
@@ -29,6 +42,8 @@
       "destination": "/"
     }
   ],
+  "cleanUrls": false,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -105,7 +120,5 @@
         }
       ]
     }
-  ],
-  "cleanUrls": false,
-  "trailingSlash": false
+  ]
 }
