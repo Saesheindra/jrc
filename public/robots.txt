@@ -1,0 +1,8 @@
+# robots.txt for jrcesg.com — JRC (Joshua Rayan Communications)
+User-agent: *
+Allow: /
+
+# Block Vercel preview/staging hosts from being indexed is handled via
+# X-Robots-Tag on non-production deployments.
+
+Sitemap: https://jrcesg.com/sitemap.xml

@@ -129,10 +129,6 @@ function Expertise() {
   const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
   const location = useLocation()
 
-  useEffect(() => {
-    document.title = 'Our Expertise - JRC | Joshua Rayan Communications'
-  }, [])
-
   // Handle hash navigation
   useEffect(() => {
     const hash = location.hash

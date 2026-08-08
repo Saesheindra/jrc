@@ -43,7 +43,6 @@ function Careers() {
   const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'Careers - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 

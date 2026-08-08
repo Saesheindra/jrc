@@ -151,7 +151,6 @@ function Awards() {
   const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'Awards & Recognitions - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 

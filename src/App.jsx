@@ -68,11 +68,6 @@ function App() {
   const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
   const heroRef = useRef(null)
 
-  // Set page title
-  useEffect(() => {
-    document.title = 'JRC - Joshua Rayan Communications | ESG & Sustainability Advisory'
-  }, [])
-
   // Scroll handling
   useEffect(() => {
     const handleScroll = () => {

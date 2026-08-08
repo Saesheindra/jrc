@@ -28,7 +28,6 @@ function Podcasts() {
   const [mobileExpertiseOpen, setMobileExpertiseOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'Podcast - JRC | Joshua Rayan Communications'
     window.scrollTo(0, 0)
   }, [])
 
