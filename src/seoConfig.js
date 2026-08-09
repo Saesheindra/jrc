@@ -32,6 +32,16 @@ export const routes = {
     description:
       'Analysis on IFRS S1 & S2, climate risk, Bursa MMLR and sustainability reporting for Malaysian listed companies, from JRC advisers.',
   },
+  '/blog/esg-consulting-malaysia-guide': {
+    title: 'ESG Consulting Malaysia Guide 2026 | JRC',
+    description:
+      'Complete guide to ESG consulting in Malaysia. Learn about NSRF requirements, choosing ESG consultants, and sustainability reporting for Bursa-listed companies.',
+  },
+  '/blog/ifrs-s1-s2-malaysia-implementation': {
+    title: 'IFRS S1 & S2 Implementation Guide Malaysia | JRC',
+    description:
+      'Practical guide to IFRS S1 and IFRS S2 implementation for Malaysian companies. Timelines, requirements, and compliance strategies from licensed IFRS training partner.',
+  },
   '/podcasts': {
     title: 'ESG Podcasts & Sustainability Conversations | JRC',
     description:
