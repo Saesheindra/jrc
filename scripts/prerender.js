@@ -10,7 +10,7 @@
  *
  * Run automatically after `vite build` (see package.json "build").
  */
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import {
@@ -59,8 +59,6 @@ const navLabels = {
   '/awards': 'Awards & Recognitions',
   '/events': 'Events & Workshops',
   '/blog': 'Blog',
-  '/blog/esg-consulting-malaysia-guide': 'ESG Consulting Malaysia Guide',
-  '/blog/ifrs-s1-s2-malaysia-implementation': 'IFRS S1 & S2 Malaysia Guide',
   '/podcasts': 'Podcasts',
   '/careers': 'Careers',
 }
@@ -150,20 +148,9 @@ function render(path, meta) {
 
 let count = 0
 for (const [path, meta] of Object.entries(routes)) {
-  let file
-  if (path === '/') {
-    file = 'index.html'
-  } else if (path.includes('/blog/')) {
-    // Nested blog routes: /blog/slug -> blog/slug.html
-    const slug = path.replace('/blog/', '')
-    const blogDir = join(dist, 'blog')
-    if (!existsSync(blogDir)) mkdirSync(blogDir, { recursive: true })
-    file = `blog/${slug}.html`
-  } else {
-    file = `${path.slice(1)}.html`
-  }
+  const file = path === '/' ? 'index.html' : `${path.slice(1)}.html`
   writeFileSync(join(dist, file), render(path, meta), 'utf-8')
-  console.log(`[prerender] ${file.padEnd(45)} <- ${meta.title}`)
+  console.log(`[prerender] ${file.padEnd(30)} <- ${meta.title}`)
   count++
 }
 
