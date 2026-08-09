@@ -195,9 +195,9 @@ function App() {
           <div className="inner">
             <div className="eyebrow">Integrated & Sustainability Reporting Specialists.</div>
             <h1>
-              <span className="line"><span>The sustainability guidance &</span></span>
-              <span className="line"><span>advisory partner trusted</span></span>
-              <span className="line"><span>by leading listed companies</span></span>
+              <span className="line"><span>ESG & Sustainability Reporting</span></span>
+              <span className="line"><span>Specialists trusted by</span></span>
+              <span className="line"><span>leading listed companies</span></span>
               <span className="line"><span>in Malaysia and <em>Southeast Asia.</em></span></span>
             </h1>
             <Link to="/podcasts" className="featured-link">
@@ -297,7 +297,7 @@ function App() {
         <div className="container">
           <div className="sec-head rv">
             <div className="eyebrow">02 · What we do.</div>
-            <h2>One Partner across the <em>full reporting cycle.</em></h2>
+            <h2>ESG Advisory & Sustainability Reporting <em>Services</em></h2>
             <p>From capacity building to strategic guidance and reporting delivery, we support every stage of the reporting journey.</p>
           </div>
           <div className="svc-grid">
@@ -325,7 +325,7 @@ function App() {
         <div className="container">
           <div className="sec-head rv">
             <div className="eyebrow">03 · Standards & frameworks.</div>
-            <h2>Fluent in every framework <em>that matters.</em></h2>
+            <h2>IFRS S1, IFRS S2 & GRI <em>Reporting Standards</em></h2>
             <p>From sustainability frameworks to corporate reporting requirements, we work across the full disclosure landscape—so your reporting speaks the language your stakeholders expect.</p>
           </div>
           <div className="fw-grid">
@@ -348,7 +348,7 @@ function App() {
         <div className="container">
           <div className="sec-head rv" style={{ textAlign: 'center', margin: '0 auto 50px' }}>
             <div className="eyebrow" style={{ justifyContent: 'center' }}>04 · Who we serve.</div>
-            <h2>One firm. <em>Every industry.</em></h2>
+            <h2>Bursa Malaysia Listed Companies <em>We Serve</em></h2>
             <p>A selection of the 80+ listed companies and organisations we've partnered with — across O&G, property, REITs, construction, aviation, energy, utilities, water, finance, retail and technology.</p>
           </div>
         </div>

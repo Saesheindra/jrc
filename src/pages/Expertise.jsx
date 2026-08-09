@@ -238,8 +238,8 @@ function Expertise() {
       <section className="page-hero">
         <div className="container">
           <div className="eyebrow">Our Expertise.</div>
-          <h1>The full sustainability <em>spectrum.</em></h1>
-          <p>A comprehensive range of ESG advisory, integrated reporting and climate disclosure solutions for organisations across Malaysia, Indonesia and Singapore.</p>
+          <h1>ESG Advisory & Sustainability Reporting <em>Services Malaysia</em></h1>
+          <p>IFRS S1, IFRS S2 training, climate risk advisory and integrated reporting solutions for Bursa-listed companies across Malaysia, Indonesia and Singapore.</p>
         </div>
       </section>
 
@@ -252,7 +252,7 @@ function Expertise() {
               <div className="training-label">
                 <span className="gold">01 ·</span> <span className="gold">Training.</span>
               </div>
-              <h2>Workshops that build <em>capability</em> in your team.</h2>
+              <h2>IFRS S1 & S2 Training Workshops <em>Malaysia</em></h2>
               <p>We're an IFRS-licensed training partner based in Malaysia. We run sessions for boards, management and the people who handle the data — hands-on and built so your team can do the work themselves afterwards.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Training Session Inquiry" className="btn training-btn-gold">PLAN A SESSION</a>
@@ -293,7 +293,7 @@ function Expertise() {
               <div className="training-label">
                 <span className="gold">02 ·</span> <span className="gold">Guidance & Advisory.</span>
               </div>
-              <h2>ESG advice that <em>holds up</em> in the report.</h2>
+              <h2>ESG Strategy & Climate Risk <em>Advisory</em></h2>
               <p>We help listed companies decide what matters, measure it properly and set targets they can defend. Because we also write the reports, the advice is built to stand up when the auditor and the rater assessors arrive.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Advisory Inquiry" className="btn training-btn-gold">START A CONVERSATION</a>
@@ -334,7 +334,7 @@ function Expertise() {
               <div className="training-label">
                 <span className="gold">03 ·</span> <span className="gold">Report Writing.</span>
               </div>
-              <h2>Reports that connect <em>strategy, governance & performance.</em></h2>
+              <h2>Integrated & Sustainability Report <em>Writing</em></h2>
               <p>This is where JRC started. For 24 years we've written the integrated, annual, sustainability and corporate governance reports that listed companies are judged on — and many have gone on to win awards.</p>
               <div className="training-buttons">
                 <a href="mailto:jr@jr.com.my?subject=Report Writing Inquiry" className="btn training-btn-gold">COMMISSION A REPORT</a>
