@@ -1,0 +1,5 @@
+# Redirect www to non-www
+https://www.jrcesg.com/* https://jrcesg.com/:splat 301
+
+# SPA fallback - serves index.html for all routes not matching a file
+/*    /index.html   200
