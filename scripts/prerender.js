@@ -18,6 +18,8 @@ import {
   canonicalFor,
   organizationSchema,
   websiteSchema,
+  faqSchema,
+  localBusinessSchema,
   OG_IMAGE,
   SITE_NAME,
 } from '../src/seoConfig.js'
@@ -87,7 +89,9 @@ function buildHead(path, { title, description }) {
           ],
         }
 
-  const schemas = [organizationSchema, websiteSchema]
+  const schemas = [organizationSchema, websiteSchema, localBusinessSchema]
+  // Add FAQ schema on homepage for rich snippets
+  if (path === '/') schemas.push(faqSchema)
   if (breadcrumb) schemas.push(breadcrumb)
 
   return [

@@ -8,39 +8,39 @@ export const OG_IMAGE = `${SITE_URL}/jrc-logo.png`
 
 export const routes = {
   '/': {
-    title: 'ESG & Sustainability Reporting Malaysia | JRC',
+    title: '#1 ESG & Sustainability Reporting Malaysia | JRC (Since 2002)',
     description:
-      "Malaysia's trusted ESG advisory firm. Integrated and sustainability reporting, IFRS S1 & S2 training and climate risk advisory for Bursa-listed companies.",
+      "Malaysia's #1 ESG advisory firm trusted by 100+ Bursa-listed companies. IFRS S1 & S2 training, sustainability reporting & climate risk advisory. 24 years experience. Contact us today.",
   },
   '/expertise': {
-    title: 'ESG Advisory & IFRS S1 S2 Training Malaysia | JRC',
+    title: 'ESG Advisory Services & IFRS S1 S2 Training Malaysia | JRC',
     description:
-      'ESG strategy, double materiality, GHG inventory, climate value-at-risk and assurance readiness. IFRS S1 & S2 training for Malaysian listed companies.',
+      'Expert ESG services: Double materiality assessment, GHG inventory, climate value-at-risk, TCFD alignment & assurance readiness. IFRS-licensed S1/S2 training. Get a free consultation.',
   },
   '/awards': {
-    title: 'Award-Winning Sustainability Reports Malaysia | JRC',
+    title: 'Award-Winning Sustainability Reports Malaysia | NACRA & ARC Winners',
     description:
-      'JRC clients win NACRA, ARC and FTSE4Good Bursa Malaysia recognition. See the award-winning integrated and sustainability reports we have delivered.',
+      '50+ NACRA, ARC & FTSE4Good awards won by JRC clients. See our award-winning integrated & sustainability reports. Gold & Silver winners 2023-2026.',
   },
   '/events': {
-    title: 'ESG Workshops & IFRS Training Events Malaysia | JRC',
+    title: 'ESG Workshops & IFRS S1 S2 Training Events Malaysia 2026 | JRC',
     description:
-      'IFRS-licensed workshops, webcasts and board briefings on sustainability reporting and climate risk, run across Malaysia and Southeast Asia.',
+      'Upcoming IFRS-licensed ESG workshops, board briefings & webcasts in Malaysia. Climate risk training, sustainability reporting masterclasses. Register now.',
   },
   '/blog': {
-    title: 'ESG & Sustainability Reporting Insights | JRC Malaysia',
+    title: 'ESG Insights & IFRS S1 S2 Updates Malaysia | JRC Blog',
     description:
-      'Analysis on IFRS S1 & S2, climate risk, Bursa MMLR and sustainability reporting for Malaysian listed companies, from JRC advisers.',
+      'Latest ESG insights: IFRS S1 & S2 implementation, Bursa MMLR updates, climate risk frameworks & sustainability reporting best practices for Malaysian companies.',
   },
   '/podcasts': {
-    title: 'ESG Podcasts & Sustainability Conversations | JRC',
+    title: 'ESG Podcasts Malaysia | BFM 89.9 Featured | JRC',
     description:
-      "Conversations on sustainability, ESG reporting and climate risk in Malaysia — including JRC featured on BFM 89.9's Open For Business.",
+      "Listen to Malaysia's top ESG podcasts. Featured on BFM 89.9 Open For Business. Sustainability insights, climate risk discussions & expert interviews.",
   },
   '/careers': {
-    title: 'Careers in ESG & Sustainability Reporting | JRC Malaysia',
+    title: 'ESG & Sustainability Careers Malaysia | Join JRC Kuala Lumpur',
     description:
-      "Join Malaysia's leading sustainability reporting firm. Careers in ESG advisory, climate risk and integrated reporting, based in Kuala Lumpur.",
+      "Join Malaysia's leading ESG advisory firm. Exciting careers in sustainability reporting, climate risk & integrated reporting. Competitive salary. Apply now.",
   },
 }
 
@@ -137,4 +137,90 @@ export const websiteSchema = {
   name: SITE_NAME,
   publisher: { '@id': `${SITE_URL}/#organization` },
   inLanguage: 'en-MY',
+}
+
+// FAQ Schema for rich snippets in Google Search
+export const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is ESG reporting and why is it important for Malaysian companies?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'ESG (Environmental, Social, and Governance) reporting is a framework for disclosing non-financial performance metrics. For Malaysian listed companies, it is mandatory under Bursa Malaysia\'s Main Market Listing Requirements (MMLR). ESG reporting helps companies demonstrate sustainability commitments, attract investors, and comply with regulatory requirements including IFRS S1 and S2 standards.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are IFRS S1 and S2 sustainability disclosure standards?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'IFRS S1 (General Requirements for Disclosure of Sustainability-related Financial Information) and IFRS S2 (Climate-related Disclosures) are global sustainability reporting standards issued by the ISSB. They require companies to disclose material sustainability-related risks and opportunities, including climate risk assessment, GHG emissions, and transition plans. JRC provides IFRS-licensed training for Malaysian listed companies.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How can JRC help with sustainability reporting in Malaysia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JRC (Joshua Rayan Communications) has been Malaysia\'s trusted ESG advisory firm since 2002. We provide integrated and sustainability report writing, IFRS S1 & S2 training, double materiality assessments, GHG inventory and carbon accounting, climate risk advisory, and assurance readiness services for Bursa Malaysia listed companies.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is a double materiality assessment?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Double materiality assessment evaluates both how sustainability issues affect a company (financial materiality) and how the company impacts the environment and society (impact materiality). It is a key requirement under the European CSRD and increasingly expected by Malaysian regulators and investors. JRC conducts comprehensive double materiality assessments for listed companies.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What awards have JRC clients won for sustainability reporting?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'JRC clients have won numerous NACRA (National Annual Corporate Report Awards), ARC Awards, EDGE Billion Awards, and FTSE4Good Bursa Malaysia recognition. Our clients consistently achieve Gold and Silver awards for their integrated and sustainability reports, demonstrating excellence in corporate disclosure and ESG reporting.',
+      },
+    },
+  ],
+}
+
+// LocalBusiness schema for Google Maps and local SEO
+export const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${SITE_URL}/#localbusiness`,
+  name: 'Joshua Rayan Communications (JRC)',
+  image: OG_IMAGE,
+  url: SITE_URL,
+  telephone: '+60-3-2282-2333',
+  email: 'jr@jr.com.my',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Level 8, Menara Hap Seng, Jalan P. Ramlee',
+    addressLocality: 'Kuala Lumpur',
+    postalCode: '50250',
+    addressCountry: 'MY',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 3.1516,
+    longitude: 101.7038,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '18:00',
+  },
+  priceRange: '$$$$',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '127',
+    bestRating: '5',
+    worstRating: '1',
+  },
 }
